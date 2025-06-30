@@ -72,7 +72,7 @@ const TeachersSection: React.FC = () => {
           {/* Teacher 1 */}
           <div className="teacher-item" data-animate="card" data-animate-delay="100">
             <div className="teacher-image">
-              <img src="/assets/img/OlimjonUvayzov.JPG" alt="Olimjon Uvayzov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Olimjon.png" alt="Olimjon Uvayzov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher1-name')}</h3>
@@ -98,7 +98,7 @@ const TeachersSection: React.FC = () => {
               </div>
             </div>
             <div className="teacher-image">
-              <img src="/assets/img/AlijonovAzizbek.JPG" alt="Azizbek Alijonov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
           </div>
@@ -107,7 +107,7 @@ const TeachersSection: React.FC = () => {
           <div className="teacher-item" data-animate="card" data-animate-delay="300">
             <img className="teacher-logo-corner" src="/assets/img/CMUQ.png" alt="University Logo" />
             <div className="teacher-image">
-              <img src="/assets/img/Aruzhan.JPG" alt="Aruzhan" style={{height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Aruzhan.png" alt="Aruzhan" style={{height: 600, objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher3-name')}</h3>
@@ -139,7 +139,7 @@ const TeachersSection: React.FC = () => {
               </div>
             </div>
             <div className="teacher-image">
-              <img src="/assets/img/IMG_0913.PNG" alt="Aruzhan" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Eldor.PNG" alt="Aruzhan" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <img className="teacher-logo-corner right" src="/assets/img/CMUQ.png" alt="University Logo" />
           </div>
