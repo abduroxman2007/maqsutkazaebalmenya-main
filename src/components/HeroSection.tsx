@@ -49,7 +49,7 @@ const HeroSection: React.FC = () => {
         />
         <div className="hero-buttons">
           <motion.button
-            className="cta-button bg-dark-blue my-8"
+            className="cta-button my-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6, type: "spring" }}

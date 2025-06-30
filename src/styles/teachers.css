@@ -1,11 +1,10 @@
-/* Teachers Section */
 .teachers {
   padding: 6rem 2rem;
   background: var(--bg-secondary);
 }
 
 .teachers-container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -29,57 +28,57 @@
   align-items: center;
   background: var(--bg-primary);
   padding: 2.5rem 2rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.10);
-  border: 1px solid var(--border-color);
+  border-radius: 1.125rem;
+  box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid var(--border-color);
   transition: box-shadow 0.2s;
   position: relative;
 }
 
 .teacher-item:hover {
-  box-shadow: 0 8px 32px var(--focus-ring);
+  box-shadow: 0 0.5rem 2rem var(--focus-ring);
 }
 
 .teacher-item.reverse {
   direction: rtl;
 }
 
-.teacher-item.reverse>* {
+.teacher-item.reverse > * {
   direction: ltr;
 }
 
 .teacher-image {
   position: relative;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 
 .teacher-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
   display: block;
 }
 
 .teacher-logo-corner {
   position: absolute;
-  top: 10px !important;
-  left: 5px !important;
-  width: 150px !important;
-  height: 150px !important;
+  top: 0.625rem !important;
+  left: 0.3125rem !important;
+  width: 9.375rem !important;
+  height: 9.375rem !important;
   object-fit: cover !important;
-  border-radius: 100px !important;
+  border-radius: 6.25rem !important;
   background: var(--bg-primary);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
-  border: 2px solid var(--border-color);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.13);
+  border: 0.125rem solid var(--border-color);
   z-index: 10;
   transform: translateY(0);
 }
 
 .teacher-logo-corner.right {
   left: auto !important;
-  right: 5px !important;
+  right: 0.3125rem !important;
 }
 
 .teacher-info h3 {
@@ -109,25 +108,24 @@
 }
 
 .achievement {
-  /* color: var(--text-color); */
   color: var(--text-white);
   font-size: 0.95rem;
   font-weight: 500;
-  /* background: var(--secondary-color); */
   background: var(--text-primary);
-  border-radius: 10px;
-  padding: 6px 14px;
+  border-radius: 0.625rem;
+  padding: 0.375rem 0.875rem;
   display: inline-block;
+  transition: background 0.2s;
 }
-.achievement:hover{
+
+.achievement:hover {
   background: var(--text-start);
 }
 
-/* Image-only Swiper for Teachers (3 per view, minimal overlay) */
 .teacherimg-swiper-section {
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 48px auto;
+  max-width: 68.75rem;
+  margin: 0 auto 3rem auto;
   position: relative;
 }
 
@@ -139,12 +137,12 @@
 .teacherimg-swiper-slide {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 28.125rem;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   background: #222;
 }
 
@@ -152,7 +150,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   display: block;
   transition: filter 0.3s;
 }
@@ -188,21 +186,21 @@
 .teacherimg-swiper-overlay-name {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
   letter-spacing: 0.01em;
 }
 
 .teacherimg-swiper-overlay-title {
   font-size: 1.05rem;
   font-weight: 400;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   opacity: 0.85;
 }
 
 .teacherimg-swiper-overlay-features {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -210,7 +208,7 @@
   font-size: 0.98rem;
   color: #fff;
   font-weight: 500;
-  max-width: 320px;
+  max-width: 20rem;
   word-break: break-word;
   background: none;
   padding: 0;
@@ -218,55 +216,677 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1100px) {
-  .teacherimg-swiper-section {
-    max-width: 98vw;
-    padding: 0 2vw;
-  }
-
-  .teacherimg-swiper-slide {
-    height: 340px;
-    border-radius: 14px;
-  }
-
-  .teacherimg-swiper-img {
-    border-radius: 14px;
-  }
-}
-
-@media (max-width: 900px) {
-  .teacherimg-swiper-slide {
-    height: 260px;
-  }
-}
-
-@media (max-width: 700px) {
-  .teacherimg-swiper-slide {
-    height: 180px;
-  }
-
-  .teacherimg-swiper-overlay-name {
-    font-size: 1.1rem;
-  }
-
-  .teacherimg-swiper-overlay-title {
-    font-size: 0.95rem;
-  }
-
-  .teacherimg-swiper-overlay-feature {
-    font-size: 0.92rem;
-  }
-}
-
-/* Move Swiper pagination dots below the images for teacher image Swiper */
 .teacherimg-swiper .swiper-pagination {
   position: static !important;
-  margin-top: 18px;
+  margin-top: 1.125rem;
   text-align: center;
 }
 
-@media (max-width: 700px) {
+/* Large Desktops (>=1400px) */
+@media (min-width: 87.5rem) {
+  .teachers {
+    padding: 7rem 2rem;
+  }
+
+  .teachers-container {
+    max-width: 87.5rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .teacher-list {
+    gap: 5rem;
+  }
+
+  .teacher-item {
+    gap: 4rem;
+    padding: 3rem 2.5rem;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.75rem;
+  }
+
+  .teacher-title {
+    font-size: 1.25rem;
+  }
+
+  .teacher-description {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  .achievement {
+    font-size: 1.0625rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 75rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 31.25rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1.75rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 1.1875rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 1.0625rem;
+    max-width: 22.5rem;
+  }
+}
+
+/* Mid Desktops (1250–1399px) */
+@media (max-width: 87.4375rem) and (min-width: 78.125rem) {
+  .teachers {
+    padding: 6.5rem 2rem;
+  }
+
+  .teachers-container {
+    max-width: 81.25rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 2.75rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .teacher-list {
+    gap: 4.5rem;
+  }
+
+  .teacher-item {
+    gap: 3.5rem;
+    padding: 2.75rem 2.25rem;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.625rem;
+  }
+
+  .teacher-title {
+    font-size: 1.1875rem;
+  }
+
+  .achievement {
+    font-size: 1rem;
+    padding: 0.4375rem 0.9375rem;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 71.875rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 29.6875rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1.625rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 1.125rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 1.03125rem;
+    max-width: 21.25rem;
+  }
+}
+
+/* Small Desktops (1100–1249px) */
+@media (max-width: 78.0625rem) and (min-width: 68.75rem) {
+  .teachers {
+    padding: 6rem 2rem;
+  }
+
+  .teachers-container {
+    max-width: 75rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .teacher-list {
+    gap: 4rem;
+  }
+
+  .teacher-item {
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .teacher-title {
+    font-size: 1.1rem;
+  }
+
+  .achievement {
+    font-size: 0.95rem;
+    padding: 0.375rem 0.875rem;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 68.75rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 28.125rem;
+  }
+}
+
+/* Large Tablets (900–1099px) */
+@media (max-width: 68.6875rem) and (min-width: 56.25rem) {
+  .teachers {
+    padding: 5rem 1.5rem;
+  }
+
+  .teachers-container {
+    max-width: 62.5rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 2.25rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .teacher-list {
+    gap: 3.5rem;
+  }
+
+  .teacher-item {
+    gap: 2.5rem;
+    padding: 2rem 1.75rem;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.375rem;
+  }
+
+  .teacher-title {
+    font-size: 1.0625rem;
+  }
+
+  .teacher-description {
+    font-size: 0.9375rem;
+  }
+
+  .achievement {
+    font-size: 0.875rem;
+    padding: 0.3125rem 0.75rem;
+  }
+
+  .teacher-logo-corner {
+    width: 8.125rem !important;
+    height: 8.125rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 61.25rem;
+    padding: 0 1rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 25rem;
+    border-radius: 1.25rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 1.25rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1.375rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 1rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.9375rem;
+    max-width: 18.75rem;
+  }
+}
+
+/* Tablets (768–899px) */
+@media (max-width: 56.1875rem) and (min-width: 48rem) {
+  .teachers {
+    padding: 4rem 1.5rem;
+  }
+
+  .teachers-container {
+    max-width: 45rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .teacher-list {
+    gap: 3rem;
+  }
+
+  .teacher-item {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .teacher-title {
+    font-size: 1rem;
+  }
+
+  .teacher-description {
+    font-size: 0.875rem;
+  }
+
+  .achievement {
+    font-size: 0.8125rem;
+    padding: 0.25rem 0.625rem;
+  }
+
+  .teacher-logo-corner {
+    width: 6.25rem !important;
+    height: 6.25rem !important;
+    top: 0.5rem !important;
+    left: 0.25rem !important;
+  }
+
+  .teacher-logo-corner.right {
+    right: 0.25rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 43.75rem;
+    padding: 0 1rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 21.25rem;
+    border-radius: 1rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 1rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1.25rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 0.9375rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.875rem;
+    max-width: 16.25rem;
+  }
+}
+
+/* Large Phones (600–767px) */
+@media (max-width: 47.9375rem) and (min-width: 37.5rem) {
+  .teachers {
+    padding: 3rem 1rem;
+  }
+
+  .teachers-container {
+    max-width: 35rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .teacher-list {
+    gap: 2.5rem;
+  }
+
+  .teacher-item {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.125rem;
+  }
+
+  .teacher-title {
+    font-size: 0.9375rem;
+  }
+
+  .teacher-description {
+    font-size: 0.8125rem;
+  }
+
+  .achievement {
+    font-size: 0.75rem;
+    padding: 0.1875rem 0.5rem;
+  }
+
+  .teacher-logo-corner {
+    width: 5rem !important;
+    height: 5rem !important;
+    top: 0.375rem !important;
+    left: 0.1875rem !important;
+  }
+
+  .teacher-logo-corner.right {
+    right: 0.1875rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 33.75rem;
+    padding: 0 0.75rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 18.75rem;
+    border-radius: 0.875rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 0.875rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1.125rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 0.875rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.8125rem;
+    max-width: 15rem;
+  }
+
   .teacherimg-swiper .swiper-pagination {
-    margin-top: 10px;
+    margin-top: 0.875rem;
+  }
+}
+
+/* Medium Phones (480–599px) */
+@media (max-width: 37.4375rem) and (min-width: 30rem) {
+  .teachers {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .teachers-container {
+    max-width: 28rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .teacher-list {
+    gap: 2rem;
+  }
+
+  .teacher-item {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+
+  .teacher-info h3 {
+    font-size: 1.0625rem;
+  }
+
+  .teacher-title {
+    font-size: 0.875rem;
+  }
+
+  .teacher-description {
+    font-size: 0.75rem;
+  }
+
+  .achievement {
+    font-size: 0.6875rem;
+    padding: 0.125rem 0.375rem;
+  }
+
+  .teacher-logo-corner {
+    width: 4.375rem !important;
+    height: 4.375rem !important;
+    top: 0.25rem !important;
+    left: 0.125rem !important;
+  }
+
+  .teacher-logo-corner.right {
+    right: 0.125rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 26.25rem;
+    padding: 0 0.625rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 16.25rem;
+    border-radius: 0.75rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 0.75rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 1rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 0.8125rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.75rem;
+    max-width: 13.75rem;
+  }
+
+  .teacherimg-swiper .swiper-pagination {
+    margin-top: 0.75rem;
+  }
+}
+
+/* Small Phones (360–479px) */
+@media (max-width: 29.9375rem) and (min-width: 22.5rem) {
+  .teachers {
+    padding: 2rem 0.5rem;
+  }
+
+  .teachers-container {
+    max-width: 21rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 1.375rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .teacher-list {
+    gap: 1.75rem;
+  }
+
+  .teacher-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0.875rem;
+    text-align: center;
+  }
+
+  .teacher-info h3 {
+    font-size: 1rem;
+  }
+
+  .teacher-title {
+    font-size: 0.8125rem;
+  }
+
+  .teacher-description {
+    font-size: 0.6875rem;
+  }
+
+  .achievement {
+    font-size: 0.625rem;
+    padding: 0.0625rem 0.25rem;
+  }
+
+  .teacher-logo-corner {
+    width: 3.75rem !important;
+    height: 3.75rem !important;
+    top: 0.1875rem !important;
+    left: 0.0625rem !important;
+  }
+
+  .teacher-logo-corner.right {
+    right: 0.0625rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 19.375rem;
+    padding: 0 0.5rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 13.75rem;
+    border-radius: 0.625rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 0.625rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 0.9375rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 0.75rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.6875rem;
+    max-width: 12.5rem;
+  }
+
+  .teacherimg-swiper .swiper-pagination {
+    margin-top: 0.625rem;
+  }
+}
+
+/* Extra Small Devices (<360px) */
+@media (max-width: 22.4375rem) {
+  .teachers {
+    padding: 1.5rem 0.375rem;
+  }
+
+  .teachers-container {
+    max-width: 18rem;
+  }
+
+  .teachers-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .teacher-list {
+    gap: 1.5rem;
+  }
+
+  .teacher-item {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+    padding: 0.875rem 0.75rem;
+    text-align: center;
+  }
+
+  .teacher-info h3 {
+    font-size: 0.9375rem;
+  }
+
+  .teacher-title {
+    font-size: 0.75rem;
+  }
+
+  .teacher-description {
+    font-size: 0.625rem;
+  }
+
+  .achievement {
+    font-size: 0.5625rem;
+    padding: 0.03125rem 0.1875rem;
+  }
+
+  .teacher-logo-corner {
+    width: 3.125rem !important;
+    height: 3.125rem !important;
+    top: 0.125rem !important;
+    left: 0.03125rem !important;
+  }
+
+  .teacher-logo-corner.right {
+    right: 0.03125rem !important;
+  }
+
+  .teacherimg-swiper-section {
+    max-width: 16.875rem;
+    padding: 0 0.375rem;
+  }
+
+  .teacherimg-swiper-slide {
+    height: 11.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .teacherimg-swiper-img {
+    border-radius: 0.5rem;
+  }
+
+  .teacherimg-swiper-overlay-name {
+    font-size: 0.875rem;
+  }
+
+  .teacherimg-swiper-overlay-title {
+    font-size: 0.6875rem;
+  }
+
+  .teacherimg-swiper-overlay-feature {
+    font-size: 0.625rem;
+    max-width: 11.25rem;
+  }
+
+  .teacherimg-swiper .swiper-pagination {
+    margin-top: 0.5rem;
   }
 }

@@ -85,11 +85,12 @@ const Navbar: React.FC = () => {
             <li><a href="#mission" onClick={handleNavClick}>{t('about')}</a></li>
             <li><a href="#teachers" onClick={handleNavClick}>{t('teachers')}</a></li>
             <li><a href="#courses" onClick={handleNavClick}>{t('courses')}</a></li>
+            <li><a href="#faq" onClick={handleNavClick}>{t('faq')}</a></li>
             <li><a href="#contact" onClick={handleNavClick}>{t('contact')}</a></li>
           </ul>
         </div>
         <div className="nav-right">
-          <div className="faq-badge" data-href="#faq" onClick={handleNavClick} tabIndex={0} role="button">{t('faq')}</div>
+          <div className="faq-badge" onClick={() => { navigate('/register'); closeMobileMenu(); }} tabIndex={0} role="button">{t('Register')}</div>
           <div className={`language-dropdown${dropdownOpen ? ' active' : ''}`}> 
             <button className="lang-dropdown-btn" onClick={toggleLanguageDropdown}>
               <span id="current-lang">{lang === 'en' ? '🇺🇸 EN' : lang === 'ru' ? '🇷🇺 RU' : '🇺🇿 UZ'}</span>
@@ -120,7 +121,7 @@ const Navbar: React.FC = () => {
           <li><a href="#contact" onClick={e => { handleNavClick(e); }}>{t('contact')}</a></li>
         </ul>
         <div className="mobile-controls">
-          <div className="faq-badge" data-href="#faq" onClick={handleNavClick} tabIndex={0} role="button">{t('faq')}</div>
+          <div className="faq-badge" onClick={() => { navigate('/register'); closeMobileMenu(); }} tabIndex={0} role="button">{t('faq')}</div>
           <div className={`language-dropdown${dropdownMobileOpen ? ' active' : ''}`}> 
             <button className="lang-dropdown-btn" onClick={toggleLanguageDropdownMobile}>
               <span id="current-lang-mobile">{lang === 'en' ? '🇺🇸 EN' : lang === 'ru' ? '🇷🇺 RU' : '🇺🇿 UZ'}</span>

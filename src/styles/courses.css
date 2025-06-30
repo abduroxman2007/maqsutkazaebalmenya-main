@@ -1,9 +1,7 @@
-
-
 /* Courses Section */
 .courses {
     padding: 6rem 2rem;
-    background: var(--bg-color);
+    background: var(--bg-primary);
   }
   
   .courses-container {
@@ -15,7 +13,7 @@
   .courses-container h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--text-color);
+    color: var(--text-primary);
   }
   
   .courses-grid {
@@ -26,13 +24,17 @@
   }
   
   .course-card {
-    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: var(--bg-primary);
     border: 2px solid var(--border-color);
     border-radius: 20px;
     padding: 2rem;
     position: relative;
     transition: all 0.3s ease-in-out;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-md);
+    min-height: 100%;
   }
   
   .course-card:hover {
@@ -41,14 +43,14 @@
   }
   
   .course-card.premium {
-    border-color: var(--primary-color);
+    border-color: var(--primary-gradient-end);
     transform: scale(1.05);
   }
   
   .course-card.ultimate {
     border: 2px solid transparent;
-    background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
-      linear-gradient(135deg, var(--accent-color), var(--primary-color)) border-box;
+    background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
+      linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle)) border-box;
     transform: scale(1.05);
   }
   
@@ -57,8 +59,8 @@
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--primary-color);
-    color: white;
+    background: var(--primary-gradient-end);
+    color: var(--text-white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -66,19 +68,24 @@
   }
   
   .badge.gold {
-    background: linear-gradient(135deg, var(--accent-color), #33595E);
+    background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle));
+  }
+  
+  [data-theme="dark"] .badge.black {
+    border-style: solid;
+    border-color: var(--primary-gradient-middle);
   }
   
   .course-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: var(--text-primary);
   }
   
   .price {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary-gradient-end);
     margin-bottom: 1.5rem;
   }
   
@@ -86,17 +93,18 @@
     list-style: none;
     text-align: left;
     margin-bottom: 2rem;
+    color: var(--text-secondary);
   }
   
   .course-card li {
     padding: 0.5rem 0;
-    color: var(--text-light);
+    color: var(--text-secondary);
   }
   
   .course-btn {
     width: 100%;
-    background: var(--primary-color);
-    color: white;
+    background: var(--text-primary);
+    color: var(--text-white);
     border: none;
     padding: 1rem;
     border-radius: 10px;
@@ -104,30 +112,22 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-top: auto;
+    align-self: flex-end;
   }
   
   .course-btn:hover {
-    background: var(--secondary-color);
+    background: var(--primary-gradient-middle);
+    color: var(--text-white);
     transform: translateY(-2px);
   }
   
-  /* Button styles */
-  .cta-button, .course-btn, .contact-form button, .about-form button {
-    background: #141253 !important;
-    color: #fff !important;
-    border: none;
-    border-radius: 999px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    padding: 0.9rem 2.5rem;
-    cursor: pointer;
-    box-shadow: 0 2px 8px 0 rgba(20, 18, 83, 0.08);
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
-    outline: none;
+  [data-theme="dark"] .course-btn {
+    background: var(--text-white);
+    color: var(--primary-gradient-end);
+    border: 2px solid var(--text-white);
   }
-  .cta-button:hover, .course-btn:hover, .contact-form button:hover, .about-form button:hover {
-    background: transparent !important;
-    color: #141253 !important;
-    box-shadow: 0 4px 16px 0 rgba(20, 18, 83, 0.10);
-    border: 2px solid #141253 !important;
+  
+  [data-theme="dark"] .course-card.premium {
+    border-color: var(--text-white);
   }
