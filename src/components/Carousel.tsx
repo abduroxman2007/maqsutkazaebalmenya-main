@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion, useMotionValue, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useMotionValue, AnimatePresence } from "framer-motion";
 import '../styles/Carousel.css';
 
 interface CarouselItem {
@@ -33,10 +33,7 @@ const DEFAULT_ITEMS: CarouselItem[] = [
   { id: 12, title: "12", description: "How to create a proper CSS profile" },
 ];
 
-const DRAG_BUFFER = 0;
-const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
-const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 } as const;
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
@@ -53,20 +50,7 @@ export default function Carousel({
 
   const carouselItems = loop ? [...items, items[0]] : items;
   const [currentIndex, setCurrentIndex] = useState(0);
-  const x = useMotionValue(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [isResetting, setIsResetting] = useState(false);
-
-  // Create a single useTransform hook for all items
-  const createRotateY = (index: number) => {
-    const range = [
-      -(index + 1) * trackItemOffset,
-      -index * trackItemOffset,
-      -(index - 1) * trackItemOffset,
-    ];
-    const outputRange = [90, 0, -90];
-    return range.map((r, i) => ({ input: r, output: outputRange[i] }));
-  };
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
