@@ -70,7 +70,6 @@ const TeachersSection: React.FC = () => {
           <div className="teacher-item" data-animate="card" data-animate-delay="100">
             <div className="teacher-image">
               <img src="/assets/img/Olimjon.png" alt="Olimjon Uvayzov" style={{ objectFit: 'cover', borderRadius: 16 }} />
-              <img className="teacher-logo-corner" src="/assets/img/KAIST.png" alt="University Logo" />
             </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher1-name')}</h3>
@@ -85,10 +84,6 @@ const TeachersSection: React.FC = () => {
           </div>
           {/* Teacher 2 */}
           <div className="teacher-item" data-animate="card" data-animate-delay="200">
-            <div className="teacher-image">
-              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ objectFit: 'cover', borderRadius: 16 }} />
-              <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
-            </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher2-name')}</h3>
               <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher2-title')}</p>
@@ -98,6 +93,10 @@ const TeachersSection: React.FC = () => {
                 <span className="achievement">{t('teacher2-achievement2')}</span>
                 <span className="achievement">{t('teacher2-achievement3')}</span>
               </div>
+            </div>
+            <div className="teacher-image">
+              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ objectFit: 'cover', borderRadius: 16 }} />
+              <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
             </div>
           </div>
 

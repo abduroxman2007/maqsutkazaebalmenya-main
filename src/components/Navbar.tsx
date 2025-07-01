@@ -74,10 +74,23 @@ const Navbar: React.FC = () => {
     <nav className={`dynamic-island-navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-left">
-          <div className="logo">
+          <a
+            href="#home"
+            className="logo"
+            tabIndex={0}
+            aria-label="Go to hero section"
+            onClick={handleHomeClick}
+            onKeyDown={event => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                handleHomeClick(event as any);
+              }
+            }}
+            style={{ display: 'flex', textDecoration: 'none', cursor: 'pointer' }}
+          >
             <img className="logo-img" src="/assets/img/light-logo.png" alt="Logo" />
             <span>aqsadly</span>
-          </div>
+          </a>
         </div>
         <div className="nav-center">
           <ul className="nav-menu">

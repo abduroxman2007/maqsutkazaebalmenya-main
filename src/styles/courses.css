@@ -33,11 +33,12 @@
     border: 2px solid var(--border-color);
     border-radius: 20px;
     padding: 2rem;
+    padding-bottom: 2rem;
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: var(--shadow-md);
     /* min-height: 100%; */
-    max-height: 550px;
+    /* max-height: 550px; */
   }
   
   .course-card:hover {
@@ -48,12 +49,14 @@
   
   .course-card.premium {
     border-color: var(--primary-gradient-end);
+    /* transform: scale(1.05); */
   }
   
   .course-card.ultimate {
     border: 2px solid transparent;
     background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
       linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle)) border-box;
+    /* transform: scale(1.05); */
   }
   
   .badge {
@@ -73,11 +76,7 @@
     background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle));
   }
   
-  [data-theme="dark"] .badge.black {
-    border-style: solid;
-    border-color: var(--primary-gradient-middle);
-  }
-  
+
   .course-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -115,7 +114,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     margin-top: auto;
-    align-self: flex-end;
+    margin-bottom: 0.5rem;
   }
   
   .course-btn:hover {
