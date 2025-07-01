@@ -33,8 +33,6 @@ const DEFAULT_ITEMS: CarouselItem[] = [
   { id: 12, title: "12", description: "How to create a proper CSS profile" },
 ];
 
-const GAP = 16;
-
 export default function Carousel({
   items = DEFAULT_ITEMS,
   baseWidth = 300,
