@@ -1,20 +1,25 @@
 import React from 'react';
+import { useTranslation } from '../TranslationContext';
 import '../styles/footer.css';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer-modern">
       <div className="footer-content">
         <div className="footer-brand">
           <img src="/assets/img/dark-logo.png" alt="Maqsadly Logo" className="footer-logo" />
-          <span className="footer-tagline">Empowering students to achieve their dreams.</span>
+          <span className="footer-tagline">{t('footer-description')}</span>
         </div>
         <nav className="footer-nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#courses">Courses</a>
-          <a href="#teachers">Teachers</a>
-          <a href="#contact">Contact</a>
+          <a href="#home">{t('footer-courses')}</a>
+          <a href="#about">{t('footer-about')}</a>
+          <a href="#courses">{t('footer-sat-english')}</a>
+          <a href="#courses">{t('footer-sat-math')}</a>
+          <a href="#courses">{t('footer-full-sat')}</a>
+          <a href="#courses">{t('footer-admission')}</a>
+          <a href="#teachers">{t('footer-teachers-link')}</a>
+          <a href="#contact">{t('footer-contact-info')}</a>
         </nav>
         <div className="footer-socials">
           <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -30,6 +35,9 @@ const Footer: React.FC = () => {
             <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
         </div>
+      </div>
+      <div className="footer-copyright">
+        {t('rights')}
       </div>
     </footer>
   );
