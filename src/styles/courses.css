@@ -133,3 +133,33 @@
   [data-theme="dark"] .course-card.premium {
     border-color: var(--text-white);
   }
+
+@media (max-width: 1100px) {
+  .courses-container h2 {
+    font-size: 1.7rem;
+  }
+  .course-card h3 {
+    font-size: 1.1rem;
+  }
+  .price {
+    font-size: 1.1rem;
+  }
+  .course-card li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .courses-container h2 {
+    font-size: 1.1rem;
+  }
+  .course-card h3 {
+    font-size: 0.9rem;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .course-card li {
+    font-size: 0.8rem;
+  }
+}

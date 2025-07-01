@@ -155,8 +155,21 @@ export default function Carousel({
         },
       };
 
-  // Number of cards to show at once
-  const cardsToShow = 3;
+  // Responsive number of cards to show at once
+  const getCardsToShow = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < 700) return 1;
+      if (window.innerWidth < 1100) return 2;
+    }
+    return 3;
+  };
+  const [cardsToShow, setCardsToShow] = useState(getCardsToShow());
+  useEffect(() => {
+    const handleResize = () => setCardsToShow(getCardsToShow());
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // Calculate the visible window of cards (no duplicates, no mid-window wrap)
   const getVisibleCards = () => {
     let start = currentIndex;
@@ -188,11 +201,18 @@ export default function Carousel({
       className={`carousel-container ${round ? "round" : ""}`}
       style={{
         width: '100%',
-        maxWidth: '800px',
-        margin: '32px auto 0',
-        /* background: 'var(--bg-color)', */
-        borderRadius: '40px',
-        boxShadow: '0 6px 32px var(--shadow)',
+        maxWidth: typeof window !== 'undefined' && window.innerWidth < 700 ? '340px'
+          : typeof window !== 'undefined' && window.innerWidth < 1100 ? '480px'
+          : '800px',
+        margin: typeof window !== 'undefined' && window.innerWidth < 700 ? '12px auto 0'
+          : typeof window !== 'undefined' && window.innerWidth < 1100 ? '18px auto 0'
+          : '32px auto 0',
+        borderRadius: typeof window !== 'undefined' && window.innerWidth < 700 ? '10px'
+          : typeof window !== 'undefined' && window.innerWidth < 1100 ? '14px'
+          : '40px',
+        boxShadow: typeof window !== 'undefined' && window.innerWidth < 700 ? '0 2px 8px var(--shadow)'
+          : typeof window !== 'undefined' && window.innerWidth < 1100 ? '0 3px 12px var(--shadow)'
+          : '0 6px 32px var(--shadow)',
         padding: '0',
         display: 'block',
         position: 'relative',
@@ -205,26 +225,36 @@ export default function Carousel({
         onClick={handlePrev}
         style={{
           position: 'absolute',
-          left: '-48px',
+          left: typeof window !== 'undefined' && window.innerWidth < 700 ? '-28px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '-36px'
+            : '-48px',
           top: '50%',
           transform: 'translateY(-50%)',
           background: 'var(--bg-color)',
           border: 'none',
           borderRadius: '50%',
-          width: '64px',
-          height: '64px',
-          fontSize: '2.2rem',
+          width: typeof window !== 'undefined' && window.innerWidth < 700 ? '44px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '54px'
+            : '64px',
+          height: typeof window !== 'undefined' && window.innerWidth < 700 ? '44px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '54px'
+            : '64px',
+          fontSize: typeof window !== 'undefined' && window.innerWidth < 700 ? '1.5rem'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '1.8rem'
+            : '2.2rem',
           color: 'var(--secondary-color)',
           cursor: 'pointer',
-          boxShadow: '0 4px 24px var(--shadow)',
+          boxShadow: typeof window !== 'undefined' && window.innerWidth < 700 ? '0 2px 8px var(--shadow)'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '0 3px 12px var(--shadow)'
+            : '0 4px 24px var(--shadow)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           transition: 'box-shadow 0.2s, background 0.2s',
           zIndex: 3,
         }}
-        onMouseOver={e => e.currentTarget.style.boxShadow = '0 8px 32px var(--shadow-lg)'}
-        onMouseOut={e => e.currentTarget.style.boxShadow = '0 4px 24px var(--shadow)'}
+        onMouseOver={e => e.currentTarget.style.boxShadow = typeof window !== 'undefined' && window.innerWidth < 700 ? '0 2px 8px var(--shadow-lg)' : '0 8px 32px var(--shadow-lg)'}
+        onMouseOut={e => e.currentTarget.style.boxShadow = typeof window !== 'undefined' && window.innerWidth < 700 ? '0 1px 4px var(--shadow)' : '0 4px 24px var(--shadow)'}
       >
         &#8592;
       </button>
@@ -234,26 +264,36 @@ export default function Carousel({
         onClick={handleNext}
         style={{
           position: 'absolute',
-          right: '-48px',
+          right: typeof window !== 'undefined' && window.innerWidth < 700 ? '-28px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '-36px'
+            : '-48px',
           top: '50%',
           transform: 'translateY(-50%)',
           background: 'var(--bg-color)',
           border: 'none',
           borderRadius: '50%',
-          width: '64px',
-          height: '64px',
-          fontSize: '2.2rem',
+          width: typeof window !== 'undefined' && window.innerWidth < 700 ? '44px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '54px'
+            : '64px',
+          height: typeof window !== 'undefined' && window.innerWidth < 700 ? '44px'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '54px'
+            : '64px',
+          fontSize: typeof window !== 'undefined' && window.innerWidth < 700 ? '1.5rem'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '1.8rem'
+            : '2.2rem',
           color: 'var(--secondary-color)',
           cursor: 'pointer',
-          boxShadow: '0 4px 24px var(--shadow)',
+          boxShadow: typeof window !== 'undefined' && window.innerWidth < 700 ? '0 2px 8px var(--shadow)'
+            : typeof window !== 'undefined' && window.innerWidth < 1100 ? '0 3px 12px var(--shadow)'
+            : '0 4px 24px var(--shadow)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           transition: 'box-shadow 0.2s, background 0.2s',
           zIndex: 3,
         }}
-        onMouseOver={e => e.currentTarget.style.boxShadow = '0 8px 32px var(--shadow-lg)'}
-        onMouseOut={e => e.currentTarget.style.boxShadow = '0 4px 24px var(--shadow)'}
+        onMouseOver={e => e.currentTarget.style.boxShadow = typeof window !== 'undefined' && window.innerWidth < 700 ? '0 2px 8px var(--shadow-lg)' : '0 8px 32px var(--shadow-lg)'}
+        onMouseOut={e => e.currentTarget.style.boxShadow = typeof window !== 'undefined' && window.innerWidth < 700 ? '0 1px 4px var(--shadow)' : '0 4px 24px var(--shadow)'}
       >
         &#8594;
       </button>

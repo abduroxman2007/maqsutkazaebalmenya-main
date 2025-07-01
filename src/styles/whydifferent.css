@@ -141,6 +141,18 @@
     max-width: 95vw;
     padding: 2rem 1.2rem 1.5rem 1.2rem;
   }
+
+  .why-different-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .why-card-title {
+    font-size: 1rem;
+  }
+
+  .why-card-desc {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -154,8 +166,15 @@
   }
 
   .why-different-container h2 {
-    font-size: 1.8rem;
-    color: var(--text-color) !important;
+    font-size: 1.1rem;
+  }
+
+  .why-card-title {
+    font-size: 0.85rem;
+  }
+
+  .why-card-desc {
+    font-size: 0.75rem;
   }
 }
 

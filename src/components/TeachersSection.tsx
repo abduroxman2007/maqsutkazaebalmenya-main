@@ -72,7 +72,8 @@ const TeachersSection: React.FC = () => {
           {/* Teacher 1 */}
           <div className="teacher-item" data-animate="card" data-animate-delay="100">
             <div className="teacher-image">
-              <img src="/assets/img/Olimjon.png" alt="Olimjon Uvayzov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Olimjon.png" alt="Olimjon Uvayzov" style={{ objectFit: 'cover', borderRadius: 16 }} />
+              <img className="teacher-logo-corner" src="/assets/img/KAIST.png" alt="University Logo" />
             </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher1-name')}</h3>
@@ -87,6 +88,10 @@ const TeachersSection: React.FC = () => {
           </div>
           {/* Teacher 2 */}
           <div className="teacher-item" data-animate="card" data-animate-delay="200">
+            <div className="teacher-image">
+              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ objectFit: 'cover', borderRadius: 16 }} />
+              <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
+            </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher2-name')}</h3>
               <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher2-title')}</p>
@@ -97,17 +102,13 @@ const TeachersSection: React.FC = () => {
                 <span className="achievement">{t('teacher2-achievement3')}</span>
               </div>
             </div>
-            <div className="teacher-image">
-              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
-            </div>
-            <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
           </div>
 
           {/* Teacher 8 */}
           <div className="teacher-item" data-animate="card" data-animate-delay="300">
-            <img className="teacher-logo-corner" src="/assets/img/CMUQ.png" alt="University Logo" />
             <div className="teacher-image">
-              <img src="/assets/img/Aruzhan.png" alt="Aruzhan" style={{height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Aruzhan.png" alt="Aruzhan" style={{ objectFit: 'cover', borderRadius: 16 }} />
+              <img className="teacher-logo-corner" src="/assets/img/CMUQ.png" alt="University Logo" />
             </div>
             <div className="teacher-info">
               <h3 style={{ textAlign: 'center' }}>{t('teacher3-name')}</h3>
@@ -139,9 +140,9 @@ const TeachersSection: React.FC = () => {
               </div>
             </div>
             <div className="teacher-image">
-              <img src="/assets/img/Eldor.PNG" alt="Aruzhan" style={{ height: 600, objectFit: 'cover', borderRadius: 16 }} />
+              <img src="/assets/img/Eldor.PNG" alt="Aruzhan" style={{ objectFit: 'cover', borderRadius: 16 }} />
+              <img className="teacher-logo-corner right" src="/assets/img/CMUQ.png" alt="University Logo" />
             </div>
-            <img className="teacher-logo-corner right" src="/assets/img/CMUQ.png" alt="University Logo" />
           </div>
           
           <div data-animate="center">
@@ -154,6 +155,11 @@ const TeachersSection: React.FC = () => {
               modules={[Autoplay, Pagination]}
               spaceBetween={32}
               slidesPerView={3}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                700: { slidesPerView: 2 },
+                1100: { slidesPerView: 3 }
+              }}
               loop={true}
               autoplay={{ delay: 3000, disableOnInteraction: false }}
               pagination={{ clickable: true }}

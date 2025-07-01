@@ -86,4 +86,52 @@
 }
 .carousel-indicator.active {
   background: var(--text-start);
+}
+
+@media (max-width: 1100px) {
+  .what-will-learn-section {
+    padding: 3.5rem 1rem 2.5rem;
+  }
+  .what-will-learn-container {
+    max-width: 95vw;
+  }
+  .carousel-item {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .what-will-learn-container h2 {
+    font-size: 2rem;
+  }
+  .carousel-item-header {
+    font-size: 1.2rem;
+  }
+  .carousel-item-title {
+    font-size: 1rem;
+  }
+  .carousel-item-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .what-will-learn-section {
+    padding: 2rem 0.5rem 1rem;
+  }
+  .what-will-learn-container h2 {
+    font-size: 1.2rem;
+  }
+  .section-subheader {
+    font-size: 1rem;
+  }
+  .carousel-item {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .carousel-item-header {
+    font-size: 1rem;
+  }
+  .carousel-item-title {
+    font-size: 0.85rem;
+  }
+  .carousel-item-description {
+    font-size: 0.8rem;
+  }
 } 
