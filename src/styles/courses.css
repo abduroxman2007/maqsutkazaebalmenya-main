@@ -36,24 +36,24 @@
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: var(--shadow-md);
-    min-height: 100%;
+    /* min-height: 100%; */
+    max-height: 550px;
   }
   
   .course-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px)!important;
     box-shadow: var(--shadow-lg);
   }
+
   
   .course-card.premium {
     border-color: var(--primary-gradient-end);
-    transform: scale(1.05);
   }
   
   .course-card.ultimate {
     border: 2px solid transparent;
     background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
       linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle)) border-box;
-    transform: scale(1.05);
   }
   
   .badge {

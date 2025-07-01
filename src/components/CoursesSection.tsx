@@ -1,10 +1,12 @@
 import React from 'react';
 import { useTranslation } from '../TranslationContext';
+import { useNavigate } from 'react-router-dom';
 import '../styles/courses.css'
 // import './styles.css'
 
 const CoursesSection: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
     <section id="courses" className="courses" data-animate="fade-in-up">
@@ -23,7 +25,7 @@ const CoursesSection: React.FC = () => {
               <li>{t('english-feature3')}</li>
               <li>{t('english-feature4')}</li>
             </ul>
-            <button className="course-btn">{t('choose-plan')}</button>
+            <button className="course-btn" onClick={() => navigate('/register')}>{t('choose-plan')}</button>
           </div>
           {/* Premium Course */}
           <div className="course-card premium" data-animate="card" data-animate-delay="200">
@@ -37,7 +39,7 @@ const CoursesSection: React.FC = () => {
               <li>{t('full-feature4')}</li>
               <li>{t('full-feature5')}</li>
             </ul>
-            <button className="course-btn">{t('choose-plan')}</button>
+            <button className="course-btn" onClick={() => navigate('/register')}>{t('choose-plan')}</button>
           </div>
           {/* Ultimate Course */}
           <div className="course-card ultimate" data-animate="card" data-animate-delay="300">
@@ -52,7 +54,7 @@ const CoursesSection: React.FC = () => {
               <li>{t('ultimate-feature5')}</li>
               <li>{t('ultimate-feature6')}</li>
             </ul>
-            <button className="course-btn">{t('choose-plan')}</button>
+            <button className="course-btn" onClick={() => navigate('/register')}>{t('choose-plan')}</button>
           </div>
         </div>
       </div>
