@@ -1,18 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { motion, useMotionValue, useTransform, MotionValue, AnimatePresence } from "framer-motion";
-import {
-  FiCircle,
-  FiCode,
-  FiFileText,
-  FiLayers,
-  FiLayout,
-} from "react-icons/fi";
+import { motion, useMotionValue, useTransform, AnimatePresence } from "framer-motion";
 import '../styles/Carousel.css';
-
-// Fix for React 19 + react-icons type incompatibility
-// Use this type instead of IconType from react-icons
-// Remove or comment out: import { IconType } from "react-icons";
-type FixedIconType = (props: React.ComponentProps<'svg'>) => React.ReactNode;
 
 interface CarouselItem {
   title: string;
@@ -80,11 +68,6 @@ export default function Carousel({
     return range.map((r, i) => ({ input: r, output: outputRange[i] }));
   };
 
-  const rotateY = useTransform(x, 
-    carouselItems.flatMap((_, i) => createRotateY(i).map(r => r.input)),
-    carouselItems.flatMap((_, i) => createRotateY(i).map(r => r.output))
-  );
-
   const containerRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
@@ -116,44 +99,6 @@ export default function Carousel({
       return () => clearInterval(timer);
     }
   }, [autoplay, autoplayDelay, isHovered, loop, items.length, carouselItems.length, pauseOnHover]);
-
-  const effectiveTransition = isResetting ? { duration: 0 } : SPRING_OPTIONS;
-
-  const handleAnimationComplete = () => {
-    if (loop && currentIndex === carouselItems.length - 1) {
-      setIsResetting(true);
-      x.set(0);
-      setCurrentIndex(0);
-      setTimeout(() => setIsResetting(false), 50);
-    }
-  };
-
-  const handleDragEnd = (_: any, info: { offset: { x: number }; velocity: { x: number } }) => {
-    const offset = info.offset.x;
-    const velocity = info.velocity.x;
-    if (offset < -DRAG_BUFFER || velocity < -VELOCITY_THRESHOLD) {
-      if (loop && currentIndex === items.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-      } else {
-        setCurrentIndex((prev) => Math.min(prev + 1, carouselItems.length - 1));
-      }
-    } else if (offset > DRAG_BUFFER || velocity > VELOCITY_THRESHOLD) {
-      if (loop && currentIndex === 0) {
-        setCurrentIndex(items.length - 1);
-      } else {
-        setCurrentIndex((prev) => Math.max(prev - 1, 0));
-      }
-    }
-  };
-
-  const dragProps = loop
-    ? {}
-    : {
-        dragConstraints: {
-          left: -trackItemOffset * (carouselItems.length - 1),
-          right: 0,
-        },
-      };
 
   // Responsive number of cards to show at once
   const getCardsToShow = () => {

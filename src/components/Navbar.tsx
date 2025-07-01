@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../TranslationContext';
 import '../styles/navbar.css' 
 import { useLocation, useNavigate } from 'react-router-dom';

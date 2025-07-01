@@ -79,22 +79,6 @@ const App: React.FC = () => {
         }
     };
 
-    const handleNewRegistration = () => {
-        setStep(1);
-        setSelectedCourse(null);
-        setFormData({
-            firstName: '',
-            lastName: '',
-            phone: '',
-            telegram: '',
-            satTaken: '',
-            predictedScore: '',
-            satDate: '',
-            englishLevel: '',
-            mathLevel: '',
-        });
-    };
-
     const progressWidth = step === 1 ? '50%' : '100%';
     const stepText = step === 1 ? 'Step 1: Select Course' : 'Step 2: Personal Information';
     const stepCount = step === 1 ? '1/2' : '2/2';

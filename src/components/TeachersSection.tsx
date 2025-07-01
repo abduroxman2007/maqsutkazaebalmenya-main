@@ -4,10 +4,9 @@ import { animateOnScroll } from '../animations';
 import '../styles/teachers.css';
 // Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 const TeachersSection: React.FC = () => {
   const { t } = useTranslation();
@@ -59,8 +58,6 @@ const TeachersSection: React.FC = () => {
     },
   ];
 
-  // Helper to truncate text
-  const truncate = (str: string, n: number) => (str.length > n ? str.slice(0, n - 1) + '…' : str);
   React.useEffect(() => { animateOnScroll(); }, []);
   return (
     <section id="teachers" className="teachers">

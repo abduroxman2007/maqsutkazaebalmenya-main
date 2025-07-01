@@ -178,20 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Throttle function for performance
-function throttle(func, limit) {
-  let inThrottle
-  return function () {
-    const args = arguments
-    
-    if (!inThrottle) {
-      func.apply(this, args)
-      inThrottle = true
-      setTimeout(() => (inThrottle = false), limit)
-    }
-  }
-}
-
 // Animate [data-animate] elements on scroll
 export function animateOnScroll() {
   const elements = document.querySelectorAll('[data-animate]');

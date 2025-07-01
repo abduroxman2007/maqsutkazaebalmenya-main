@@ -42,7 +42,6 @@ const RotatingText = forwardRef((props: any, ref) => {
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const textRef = useRef<HTMLDivElement>(null);
-  const [boxWidth, setBoxWidth] = useState<number | undefined>(undefined);
 
   const splitIntoCharacters = (text: string) => {
     if (typeof Intl !== "undefined" && (Intl as any).Segmenter) {
@@ -164,7 +163,7 @@ const RotatingText = forwardRef((props: any, ref) => {
 
   useLayoutEffect(() => {
     if (textRef.current) {
-      setBoxWidth(textRef.current.offsetWidth);
+      // No need to set boxWidth here
     }
   }, [texts, currentTextIndex]);
 
