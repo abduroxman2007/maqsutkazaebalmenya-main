@@ -158,16 +158,14 @@ const TeachersSection: React.FC = () => {
               {swiperTeachers.map((teacher, idx) => (
                 <SwiperSlide key={teacher.id + idx}>
                   <div className="teacherimg-swiper-slide" style={{ position: 'relative' }}>
-                    <img className="teacherimg-swiper-img" src={teacher.img} alt={t(`${teacher.id}-image-alt`)} />
-                    {/* University logo in top-right corner */}
                     <img
                       src={teacher.logo}
                       alt={teacher.logoAlt}
                       aria-label={teacher.logoAlt}
                       tabIndex={0}
-                      className="teacher-logo-corner right"
-                      style={{ width: '4rem', height: '4rem', position: 'absolute', top: '0.75rem', right: '0.75rem', borderRadius: '50%', background: '#fff', zIndex: 10 }}
+                      className={`university-logo-corner right${teacher.id === 'teacher8' ? ' square' : ''}`}
                     />
+                    <img className="teacherimg-swiper-img" src={teacher.img} alt={t(`${teacher.id}-image-alt`)} />
                     <div className="teacherimg-swiper-overlay">
                       <div className="teacherimg-swiper-overlay-name">{t(`${teacher.id}-name`)}</div>
                       <div className="teacherimg-swiper-overlay-title">{t(`${teacher.id}-title`)}</div>

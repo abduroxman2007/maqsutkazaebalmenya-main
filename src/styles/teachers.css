@@ -79,8 +79,8 @@
   left: 0.5rem;
   width: 5rem !important;
   height: 5rem !important;
-  object-fit: contain !important;
-  border-radius: 0.5rem !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
   background: #fff;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.13);
   border: 0.125rem solid var(--border-color);
@@ -91,6 +91,21 @@
 .teacher-logo-corner.right {
   left: auto !important;
   right: 0.5rem !important;
+}
+
+.university-logo-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem !important;
+  height: 6rem !important;
+  object-fit: contain !important;
+  border-radius: 0.5rem !important;
+  background: #fff;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.13);
+  border: 0.125rem solid var(--border-color);
+  z-index: 20;
+  padding: 0.1rem;
 }
 
 .teacher-info h3 {
