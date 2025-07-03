@@ -1,5 +1,4 @@
 import React, { useState, FormEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
 // import './App.css'; // Import your CSS file
 import '../styles/registration.css'
 import { submitToGoogleForms } from '../lib/googleForms';
@@ -19,7 +18,6 @@ const App: React.FC = () => {
         englishLevel: '',
         mathLevel: '',
     });
-    const navigate = useNavigate();
 
     const handleCourseSelect = (course: string) => {
         setSelectedCourse(course);
