@@ -1007,8 +1007,8 @@
 }
 .teacher-feature-card {
   position: relative;
-  width: 180px;
-  height: 110px;
+  width: 240px;
+  height: 140px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -1032,12 +1032,12 @@
   text-align: left;
 }
 .teacher-feature-card .teacher-feature-main {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
 }
 .teacher-feature-card .teacher-feature-desc {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   font-weight: 500;
 }

@@ -329,10 +329,10 @@ const App: React.FC = () => {
                         <h2 className="text-2xl font-bold text-gray-800 mt-6 mb-4">Registration Successful!</h2>
                         <p className="text-gray-600 mb-8">Thank you for registering with Maqsadly. We'll contact you soon with further details.</p>
                         <button
-                            onClick={() => navigate('/')}
+                            onClick={() => window.location.href = 'https://forms.gle/WrRokQZQPwQdgqSy9'}
                             className="px-8 py-3 bg-indigo-600 text-white rounded-lg font-medium transition-all duration-300 hover:bg-indigo-700"
                         >
-                            Go to Main Page
+                            Go to Google Form
                         </button>
                     </div>
                 )}

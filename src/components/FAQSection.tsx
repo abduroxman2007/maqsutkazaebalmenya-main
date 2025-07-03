@@ -57,7 +57,6 @@ const FAQSection: React.FC = () => {
       <div className="faq-container">
         <div className="faq-header">
           <h2>{t('faq.title')}</h2>
-          <p>{t('faq.subtitle')}</p>
         </div>
         
         <div className="faq-grid">

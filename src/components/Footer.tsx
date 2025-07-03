@@ -9,7 +9,6 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-brand">
           <img src="/assets/img/dark-logo.png" alt="Maqsadly Logo" className="footer-logo" />
-          <span className="footer-tagline">{t('footer-description')}</span>
         </div>
         <nav className="footer-nav">
           <a href="#home">{t('footer-courses')}</a>
@@ -19,7 +18,6 @@ const Footer: React.FC = () => {
           <a href="#courses">{t('footer-full-sat')}</a>
           <a href="#courses">{t('footer-admission')}</a>
           <a href="#teachers">{t('footer-teachers-link')}</a>
-          <a href="#contact">{t('footer-contact-info')}</a>
         </nav>
         <div className="footer-socials">
           <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -36,9 +34,9 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className="footer-copyright">
+      {/* <div className="footer-copyright">
         {t('rights')}
-      </div>
+      </div> */}
     </footer>
   );
 };

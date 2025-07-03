@@ -55,14 +55,10 @@ const HeroSection: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.6, type: "spring" }}
             whileHover={{ scale: 1.06, boxShadow: "0 4px 32px rgba(90,138,255,0.18)" }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => navigate('/register')}
+            onClick={() => window.open('https://forms.gle/WrRokQZQPwQdgqSy9', '_blank')}
           >
             {t('Register for free')}
           </motion.button>
-        </div>
-        <div className="trust-badge">
-          <span className="trust-badge-icon">✓</span>
-          <span>{t('trust-badge')}</span>
         </div>
       </div>
     </section>
