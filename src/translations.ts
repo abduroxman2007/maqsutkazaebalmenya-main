@@ -11,7 +11,7 @@ export const translations = {
     contact: "Contact",
     faq: "FAQ", 
 
-      "register-btn": "Register now",
+      "register-btn": "Register Now",
     // Hero Section
 "hero-title-part1": "Achieve Your",
     "hero-title-part2": "Dream SAT Score",
@@ -91,7 +91,7 @@ export const translations = {
   // Aruzhan Teacher 3
    "teacher3-name": "Aruzhan Aitmukhambetova ",
    "teacher3-title": "Our next mentor is from Kazakhstan",
-   "teacher3-description": "Meet Aruzhan, our SAT Mentor at Maqsadly Edu. Aruzhan has got 1520 on the SAT with a perfect Math score of 800.<br><br>🌟As an incoming freshman at Carnegie Mellon University in Qatar 🎓 (#1 University in Computer Science), Aruzhan brings a dynamic teaching style that not only covers powerful SAT strategies, but also includes gamification 🎮 — an exciting and effective way to boost student engagement and performance.<br><br>📚Aruzhan is committed to helping students at Maqsadly to get their desired scores in the upcoming August exam.",
+   "teacher3-description": "Meet Aruzhan, our SAT Mentor at Maqsadly Edu. Aruzhan has got 1520 on the SAT with a perfect Math score of 800.<br><br>🌟As an incoming freshman at Carnegie Mellon University in Qatar 🎓 (#1 University in Computer Science), Aruzhan brings a dynamic teaching style that not only covers powerful SAT strategies, but also includes gamification — an exciting and effective way to boost student engagement and performance.<br><br>📚Aruzhan is committed to helping students at Maqsadly to get their desired scores in the upcoming August exam.",
    "teacher3-achievement1-main": "CMU Qatar",
    "teacher3-achievement1-sub": "Computer Science",
    "teacher3-achievement2-main": "800",
@@ -104,7 +104,7 @@ export const translations = {
    // Eldor Teacher 4
    "teacher4-name": "Eldor Khamraev ",
    "teacher4-title": "✓ Head Admissions Mentor",
-   "teacher4-description": "Eldor Khamraev — full-ride winner, essay expert, and your admissions mentor at Maqsadly ✨<br><br>He leads weekly seminars on building standout profiles and crafting powerful, authentic essays 📝.<br><br>With a $336,000 scholarship 🏅🎓 behind him, Eldor shares the exact strategies that got him there — giving you early access to the college admissions game while you prep for the SAT 📖🚀.<br><br>Learn from someone who's done it. Now it's your move. 🌟",
+   "teacher4-description": "Eldor Khamraev — full-ride winner, essay expert, and your admissions mentor at Maqsadly ✨<br><br>He leads weekly seminars on building standout profiles and crafting powerful, authentic essays 📝.<br><br>With a $336,000 scholarship behind him, Eldor shares the exact strategies that got him there — giving you early access to the college admissions game while you prep for the SAT .<br><br>Learn from someone who's done it. Now it's your move. 🌟",
    "teacher4-achievement1-main": "CMU Qatar",
    "teacher4-achievement1-sub": "Business Administration",
    "teacher4-achievement2-main": "$336,000",
@@ -147,6 +147,9 @@ export const translations = {
    "course-english": "SAT English | Math",
    "course-full": "FULL SAT ",
    "course-ultimate": "FULL SAT + Admission Masterclasses",
+   "basic-price": "$69 monthly",
+   "popular-price": "$89 monthly",
+   "best-price": "$99 monthly",
    popular: "Most Popular",
    "best-value": "Best Value",
    "english-feature1": "✓ 12 expert-led sessions",
@@ -217,7 +220,7 @@ export const translations = {
     contact: "Контакты",
     faq: "Вопросы и ответы",
 
-    "register-btn": "Зарегистрируйтесь сейчас",
+    "register-btn": "Зарегистрируйтесь Сейчас",
 
     
 // Hero Section
@@ -287,7 +290,7 @@ export const translations = {
     // Aruzhan Teacher 3
     "teacher3-name": "Аружан Айтмухамбетова",
     "teacher3-title": "Наш следующий наставник из Казахстана",
-    "teacher3-description": "Познакомьтесь с Аружан — наставницей SAT в Maqsadly Edu. Она набрала 1520 баллов на SAT, включая идеальные 800 по математике.<br><br>🌟Будущая студентка Carnegie Mellon University в Катаре 🎓 (#1 в мире по компьютерным наукам), Аружан использует динамичный стиль преподавания, который включает не только мощные стратегии SAT, но и геймификацию 🎮 — увлекательный и эффективный способ повысить вовлеченность и результативность студентов.<br><br>📚Аружан стремится помочь студентам Maqsadly достичь желаемых баллов на предстоящем августовском экзамене.",
+    "teacher3-description": "Познакомьтесь с Аружан — наставницей SAT в Maqsadly Edu. Она набрала 1520 баллов на SAT, включая идеальные 800 по математике.<br><br>🌟Будущая студентка Carnegie Mellon University в Катаре 🎓 (#1 в мире по компьютерным наукам), Аружан использует динамичный стиль преподавания, который включает не только мощные стратегии SAT, но и геймификацию — увлекательный и эффективный способ повысить вовлеченность и результативность студентов.<br><br>📚Аружан стремится помочь студентам Maqsadly достичь желаемых баллов на предстоящем августовском экзамене.",
     "teacher3-achievement1-main": "CMU Qatar",
     "teacher3-achievement1-sub": "Компьютерные науки",
     "teacher3-achievement2-main": "800",
@@ -301,7 +304,7 @@ export const translations = {
     // Eldor Teacher 4
     "teacher4-name": "Элдор Хамраев",
     "teacher4-title": "✓ Главный наставник по поступлению",
-    "teacher4-description": "Элдор Хамраев — обладатель полной стипендии, эксперт по эссе и ваш наставник по поступлению в Maqsadly ✨<br><br>Он проводит еженедельные семинары по созданию выдающихся профилей и написанию сильных, искренних эссе 📝.<br><br>Стипендия на $336,000 🏅🎓 — это результат стратегий, которыми он делится с вами, давая ранний доступ к миру университетских заявок, пока вы готовитесь к SAT 📖🚀.<br><br>Учитесь у того, кто прошел этот путь. Теперь ваш ход. 🌟",
+    "teacher4-description": "Элдор Хамраев — обладатель полной стипендии, эксперт по эссе и ваш наставник по поступлению в Maqsadly ✨<br><br>Он проводит еженедельные семинары по созданию выдающихся профилей и написанию сильных, искренних эссе 📝.<br><br>Стипендия на $336,000 — это результат стратегий, которыми он делится с вами, давая ранний доступ к миру университетских заявок, пока вы готовитесь к SAT .<br><br>Учитесь у того, кто прошел этот путь. Теперь ваш ход. 🌟",
     "teacher4-achievement1-main": "CMU Qatar",
     "teacher4-achievement1-sub": "Бизнес-администрирование",
     "teacher4-achievement2-main": "$336,000",
@@ -361,6 +364,9 @@ export const translations = {
     "course-full": "ПОЛНЫЙ SAT ",
     "course-ultimate": "ПОЛНЫЙ SAT + Мастер-классы по поступлению ",
     "popular": "Самый популярный",
+    "basic-price": "$69 в месяц",
+    "popular-price": "$89 в месяц",
+    "best-price": "$99 в месяц",
     "best-value": "Лучшая цена",
 
     "english-feature1": "✓ 12 занятий с экспертами",
@@ -426,7 +432,7 @@ export const translations = {
     "teachers": "O'qituvchilar",
     "contact": "Bog'lanish",
     "faq": "Savol-javoblar",
-    "register-btn": "Hoziroq Regestratsiyadan o'ting",
+    "register-btn": "Hoziroq Regestratsiyadan O'ting",
     // Hero Section
     "hero-title-part1": "Orzuyingizdagi",
     "hero-title-part2": "SAT natijasiga erishing",
@@ -494,7 +500,7 @@ export const translations = {
     // Aruzhan Teacher 3
     "teacher3-name": "Aruzhan Aitmukhambetova",
     "teacher3-title": "Qozog'istondan SAT mentori",
-    "teacher3-description": "Bu — Aruzhan, Maqsadly'dagi SAT mentoringiz. U 1520 SAT natijasiga ega va Math bo'yicha mukammal 800 ballni qo'lga kiritgan.<br><br>🌟 Carnegie Mellon University Qatar (dunyoning #1 kompyuter fanlari bo'yicha universiteti)ga talaba sifatida qabul qilingan Aruzhan darslarida nafaqat kuchli strategiyalar, balki 🎮 gamifikatsiya (o'yinga asoslangan o'rganish) orqali o'quvchilarni ilhomlantiruvchi yondashuvni taqdim etadi.<br><br>📚 Maqsadly'dagi o'quvchilarning avgustdagi imtihonda yuqori natijaga erishishida u faol yordam beradi.",
+    "teacher3-description": "Bu — Aruzhan, Maqsadly'dagi SAT mentoringiz. U 1520 SAT natijasiga ega va Math bo'yicha mukammal 800 ballni qo'lga kiritgan.<br><br>🌟 Carnegie Mellon University Qatar (dunyoning #1 kompyuter fanlari bo'yicha universiteti)ga talaba sifatida qabul qilingan Aruzhan darslarida nafaqat kuchli strategiyalar, balki gamifikatsiya (o'yinga asoslangan o'rganish) orqali o'quvchilarni ilhomlantiruvchi yondashuvni taqdim etadi.<br><br>📚 Maqsadly'dagi o'quvchilarning avgustdagi imtihonda yuqori natijaga erishishida u faol yordam beradi.",
     "teacher3-achievement1-main": "CMU Qatar",
     "teacher3-achievement1-sub": "Kompyuter fanlari",
     "teacher3-achievement2-main": "800",
@@ -508,7 +514,7 @@ export const translations = {
     // Eldor Teacher 4
     "teacher4-name": "Eldor Xamraev",
     "teacher4-title": "✓ Bosh admissions mentori",
-    "teacher4-description": "Eldor Xamraev — to'liq grant sohibi, esse mutaxassisi va sizning admissions mentoringiz ✨<br><br>U har hafta ariza portfeli yaratish va kuchli, samimiy esse yozishga bag'ishlangan seminarlar o'tkazadi 📝.<br><br>$336,000 stipendiyani qo'lga kiritgan Eldor sizga aynan shu natijaga olib kelgan strategiyalarni o'rgatadi. SATga tayyorgarlik bilan birga admissions jarayonida ham erta start oling 📖🚀.<br><br>U buni bajargan. Endi sizning navbatingiz. 🌟",
+    "teacher4-description": "Eldor Xamraev — to'liq grant sohibi, esse mutaxassisi va sizning admissions mentoringiz ✨<br><br>U har hafta ariza portfeli yaratish va kuchli, samimiy esse yozishga bag'ishlangan seminarlar o'tkazadi.<br><br>$336,000 stipendiyani qo'lga kiritgan Eldor sizga aynan shu natijaga olib kelgan strategiyalarni o'rgatadi. SATga tayyorgarlik bilan birga admissions jarayonida ham erta start oling.<br><br>U buni bajargan. Endi sizning navbatingiz. 🌟",
     "teacher4-achievement1-main": "CMU Qatar",
     "teacher4-achievement1-sub": "Biznes boshqaruvi",
     "teacher4-achievement2-main": "$336,000",
@@ -566,6 +572,9 @@ export const translations = {
     "course-full": "TO'LIQ SAT ",
     "course-ultimate": "TO'LIQ SAT + Admissions Masterklasslar",
     "popular": "Eng ommabop",
+    "basic-price": "$69 bir oyga",
+    "popular-price": "$89 bir oyga",
+    "best-price": "$99 bir oyga",
     "best-value": "Eng yaxshi qiymat",
 
     "english-feature1": "✓ 12 ta ekspert darslari",

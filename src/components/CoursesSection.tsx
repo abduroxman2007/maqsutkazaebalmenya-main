@@ -16,7 +16,7 @@ const CoursesSection: React.FC = () => {
           {/* Basic Course */}
           <div className="course-card basic" data-animate="card" data-animate-delay="100">
             <h3>{t('course-english')}</h3>
-            <div className="price">$69</div>
+            <div className="price">{t('basic-price')}</div>
             <ul>
               <li>{t('english-feature1')}</li>
               <li>{t('english-feature2')}</li>
@@ -29,7 +29,7 @@ const CoursesSection: React.FC = () => {
           <div className="course-card premium" data-animate="card" data-animate-delay="200">
             <div className="badge black">{t('popular')}</div>
             <h3>{t('course-full')}</h3>
-            <div className="price">$89</div>
+            <div className="price">{t('popular-price')}</div>
             <ul>
               <li>{t('full-feature1')}</li>
               <li>{t('full-feature2')}</li>
@@ -42,7 +42,7 @@ const CoursesSection: React.FC = () => {
           <div className="course-card ultimate" data-animate="card" data-animate-delay="300">
             <div className="badge gold">{t('best-value')}</div>
             <h3>{t('course-ultimate')}</h3>
-            <div className="price">$99</div>
+            <div className="price">{t('best-price')}</div>
             <ul>
               <li>{t('ultimate-feature1')}</li>
               <li>{t('ultimate-feature2')}</li>
