@@ -10,6 +10,8 @@ export const translations = {
     teachers: "Teachers",
     contact: "Contact",
     faq: "FAQ", 
+
+      "register-btn": "Register now",
     // Hero Section
 "hero-title-part1": "Achieve Your",
     "hero-title-part2": "Dream SAT Score",
@@ -214,6 +216,8 @@ export const translations = {
     teachers: "Преподаватели",
     contact: "Контакты",
     faq: "Вопросы и ответы",
+
+    "register-btn": "Зарегистрируйтесь сейчас",
 
     
 // Hero Section
@@ -422,7 +426,7 @@ export const translations = {
     "teachers": "O'qituvchilar",
     "contact": "Bog'lanish",
     "faq": "Savol-javoblar",
-
+    "register-btn": "Hoziroq Regestratsiyadan o'ting",
     // Hero Section
     "hero-title-part1": "Orzuyingizdagi",
     "hero-title-part2": "SAT natijasiga erishing",

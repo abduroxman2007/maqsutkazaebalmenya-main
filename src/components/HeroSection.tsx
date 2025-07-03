@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
             whileTap={{ scale: 0.97 }}
             onClick={() => window.open('https://forms.gle/WrRokQZQPwQdgqSy9', '_blank')}
           >
-            {t('Register for free')}
+            {t('register-btn')}
           </motion.button>
         </div>
       </div>

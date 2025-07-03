@@ -77,10 +77,10 @@ const BrochureModal: React.FC = () => {
           &times;
         </button>
         <div className="brochure-modal-title">
-          Begin your research journey today.
+          Begin your University journey today.
         </div>
         <div className="brochure-modal-subtitle">
-          Request our brochure!
+          Request call!
         </div>
         <form className="brochure-modal-form" autoComplete="off" onSubmit={handleSubmit}>
           <label className="brochure-modal-label" htmlFor="name">
@@ -110,7 +110,7 @@ const BrochureModal: React.FC = () => {
             aria-required="true"
             aria-label="Phone Number"
             pattern="[+()0-9\s-]{7,}"
-            placeholder="e.g. +1 (555) 123-4567"
+            placeholder="e.g. +998 (xx) xxxxxxx"
             tabIndex={0}
           />
           <button
