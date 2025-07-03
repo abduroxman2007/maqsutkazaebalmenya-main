@@ -1,12 +1,10 @@
 import React from 'react';
 import { useTranslation } from '../TranslationContext';
 import '../styles/courses.css'
-import { useNavigate } from 'react-router-dom';
 // import './styles.css'
 
 const CoursesSection: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   return (
     <section id="courses" className="courses" data-animate="fade-in-up">

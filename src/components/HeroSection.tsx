@@ -5,11 +5,9 @@ import BlurText from './BlurText';
 import { motion } from 'framer-motion';
 import Aurora from './Aurora';
 import '../styles/hero.css'
-import { useNavigate } from 'react-router-dom';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   return (
     <section id="home" className="hero-section">
       <Aurora
