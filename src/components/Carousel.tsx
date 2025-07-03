@@ -6,6 +6,7 @@ interface CarouselItem {
   title: string;
   description: string;
   id: number;
+  emoji?: string;
 }
 
 interface CarouselProps {
@@ -19,18 +20,18 @@ interface CarouselProps {
 }
 
 const DEFAULT_ITEMS: CarouselItem[] = [
-  { id: 1, title: "01", description: "How to choose the right university for your future" },
-  { id: 2, title: "02", description: "How to prepare independently for IELTS and SAT" },
-  { id: 3, title: "03", description: "How to calculate GPA - School grades correctly" },
-  { id: 4, title: "04", description: "How to start building your portfolio" },
-  { id: 5, title: "05", description: "How to work with top data platforms" },
-  { id: 6, title: "06", description: "How to write essays and recommendations for admissions." },
-  { id: 7, title: "07", description: "How to successfully pass interviews" },
-  { id: 8, title: "08", description: "How to properly apply to American universities" },
-  { id: 9, title: "09", description: "How to create a proper CSS profile" },
-  { id: 10, title: "10", description: "How to successfully pass interviews" },
-  { id: 11, title: "11", description: "How to properly apply to American universities" },
-  { id: 12, title: "12", description: "How to create a proper CSS profile" },
+  { id: 1, title: "01", description: "How to choose the right university for your future", emoji: "🎯" },
+  { id: 2, title: "02", description: "How to prepare independently for IELTS and SAT", emoji: "🧠" },
+  { id: 3, title: "03", description: "How to calculate GPA - School grades correctly", emoji: "✨" },
+  { id: 4, title: "04", description: "How to start building your portfolio", emoji: "🧘" },
+  { id: 5, title: "05", description: "How to work with top data platforms", emoji: "🔍" },
+  { id: 6, title: "06", description: "How to write essays and recommendations for admissions.", emoji: "🏆" },
+  { id: 7, title: "07", description: "How to successfully pass interviews", emoji: "💰" },
+  { id: 8, title: "08", description: "How to properly apply to American universities", emoji: "📊" },
+  { id: 9, title: "09", description: "How to create a proper CSS profile", emoji: "💼" },
+  { id: 10, title: "10", description: "How to successfully pass interviews", emoji: "🎯" },
+  { id: 11, title: "11", description: "How to properly apply to American universities", emoji: "🧠" },
+  { id: 12, title: "12", description: "How to create a proper CSS profile", emoji: "✨" },
 ];
 
 export default function Carousel({
@@ -246,16 +247,57 @@ export default function Carousel({
                   padding: '2.5rem 1.5rem 2.5rem 1.5rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'center',
+                  alignItems: 'flex-start',
                   justifyContent: 'flex-start',
                   overflow: 'auto',
                   wordBreak: 'break-word',
-                  textAlign: 'center',
+                  textAlign: 'left',
+                  background: 'var(--bg-primary)',
                 }}
               >
-                <div className="carousel-item-header" style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '1.2rem', marginTop: '0.5rem', borderRadius: '100px' }}>{item.title}</div>
-                <div className="carousel-item-content">
-                  <div className="carousel-item-title" style={{ fontWeight: 500, fontSize: '1.2rem', marginBottom: 0, lineHeight: 1.5 }}>{item.description}</div>
+                {/* Emoji on separate line */}
+                {item.emoji && (
+                  <div 
+                    className="carousel-item-emoji" 
+                    style={{ 
+                      fontSize: '3rem', 
+                      marginBottom: '1rem',
+                      textAlign: 'left',
+                      width: '100%'
+                    }}
+                  >
+                    {item.emoji}
+                  </div>
+                )}
+                
+                {/* Number and text aligned to left */}
+                <div className="carousel-item-content" style={{ width: '100%' }}>
+                  <div 
+                    className="carousel-item-header" 
+                    style={{ 
+                      fontSize: '1.5rem', 
+                      fontWeight: 700, 
+                      marginBottom: '0.5rem',
+                      color: 'var(--primary-gradient-start)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem'
+                    }}
+                  >
+                    <span style={{ color: 'var(--primary-gradient-middle)' }}>{item.title}</span>
+                  </div>
+                  <div 
+                    className="carousel-item-title" 
+                    style={{ 
+                      fontWeight: 500, 
+                      fontSize: '1.1rem', 
+                      marginBottom: 0, 
+                      lineHeight: 1.5,
+                      color: 'var(--text-secondary)'
+                    }}
+                  >
+                    {item.description}
+                  </div>
                 </div>
               </div>
             ))}

@@ -66,84 +66,101 @@ const TeachersSection: React.FC = () => {
           <h2>{t('teachers-title')}</h2>
         </div>
         <div className="teacher-list">
-          {/* Teacher 1 */}
-          <div className="teacher-item" data-animate="card" data-animate-delay="100">
-            <div className="teacher-image">
-              <img src="/assets/img/Olimjon.png" alt="Olimjon Uvayzov" style={{ objectFit: 'cover', borderRadius: 16 }} />
-            </div>
-            <div className="teacher-info">
-              <h3 style={{ textAlign: 'center' }}>{t('teacher1-name')}</h3>
-              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher1-title')}</p>
-              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher1-description') }} />
-              <div className="teacher-achievements" style={{ textAlign: 'left' }}>
-                <span className="achievement">{t('teacher1-achievement1')}</span>
-                <span className="achievement">{t('teacher1-achievement2')}</span>
-                <span className="achievement">{t('teacher1-achievement3')}</span>
+          {[
+            {
+              img: "/assets/img/Olimjon.png",
+              name: t('teacher1-name'),
+              title: t('teacher1-title'),
+              desc: t('teacher1-description'),
+              achievements: [
+                t('teacher1-achievement1'),
+                t('teacher1-achievement2'),
+                t('teacher1-achievement3'),
+              ],
+              logo: null,
+              logoClass: "",
+              imageAlt: "Olimjon Uvayzov",
+            },
+            {
+              img: "/assets/img/Azizbek.png",
+              name: t('teacher2-name'),
+              title: t('teacher2-title'),
+              desc: t('teacher2-description'),
+              achievements: [
+                t('teacher2-achievement1'),
+                t('teacher2-achievement2'),
+                t('teacher2-achievement3'),
+              ],
+              logo: "/assets/img/KAIST.png",
+              logoClass: "right",
+              imageAlt: "Azizbek Alijonov",
+            },
+            {
+              img: "/assets/img/Aruzhan.png",
+              name: t('teacher3-name'),
+              title: t('teacher3-title'),
+              desc: t('teacher3-description'),
+              achievements: [
+                t('teacher3-achievement1'),
+                t('teacher3-achievement2'),
+                t('teacher3-achievement3'),
+              ],
+              logo: "/assets/img/CMUQ.png",
+              logoClass: "",
+              imageAlt: "Aruzhan",
+            },
+          ].map((teacher, idx) => (
+            <div
+              className={`teacher-item${idx % 2 === 1 ? ' reverse' : ''}`}
+              data-animate="card"
+              data-animate-delay={100 * (idx + 1)}
+              key={teacher.name}
+            >
+              {teacher.logo && (
+                <img className={`teacher-logo-corner${teacher.logoClass ? ' ' + teacher.logoClass : ''}`} src={teacher.logo} alt="University Logo" />
+              )}
+              <div className="teacher-image">
+                <img src={teacher.img} alt={teacher.imageAlt} style={{ objectFit: 'cover', borderRadius: 16 }} />
+              </div>
+              <div className="teacher-info">
+                <h3 style={{ textAlign: 'center' }}>{teacher.name}</h3>
+                <p className="teacher-title" style={{ textAlign: 'center' }}>{teacher.title}</p>
+                <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: teacher.desc }} />
+                <div className="teacher-achievements" style={{ textAlign: 'left' }}>
+                  {teacher.achievements.map((ach, i) => (
+                    <span className="achievement" key={i}>{ach}</span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          {/* Teacher 2 */}
-          <div className="teacher-item" data-animate="card" data-animate-delay="200">
-            <div className="teacher-info">
-              <h3 style={{ textAlign: 'center' }}>{t('teacher2-name')}</h3>
-              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher2-title')}</p>
-              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher2-description') }} />
-              <div className="teacher-achievements" style={{ textAlign: 'left' }}>
-                <span className="achievement">{t('teacher2-achievement1')}</span>   
-                <span className="achievement">{t('teacher2-achievement2')}</span>
-                <span className="achievement">{t('teacher2-achievement3')}</span>
-              </div>
-            </div>
-            <div className="teacher-image">
-              <img src="/assets/img/Azizbek.png" alt="Azizbek Alijonov" style={{ objectFit: 'cover', borderRadius: 16 }} />
-              <img className="teacher-logo-corner right" src="/assets/img/KAIST.png" alt="University Logo" />
-            </div>
+          ))}
+
+          <div data-animate="center">
+            <h2>{t('teachers-title')}</h2>
           </div>
 
-          {/* Teacher 8 */}
-          <div className="teacher-item" data-animate="card" data-animate-delay="300">
+          {/* Eldor - 4th teacher */}
+          <div className="teacher-item reverse" data-animate="card" data-animate-delay="400">
+            <img className="teacher-logo-corner right" src="/assets/img/CMUQ.png" alt="University Logo" />
             <div className="teacher-image">
-              <img src="/assets/img/Aruzhan.png" alt="Aruzhan" style={{ objectFit: 'cover', borderRadius: 16 }} />
-              <img className="teacher-logo-corner" src="/assets/img/CMUQ.png" alt="University Logo" />
+              <img src="/assets/img/Eldor.PNG" alt="Eldor" style={{ objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <div className="teacher-info">
-              <h3 style={{ textAlign: 'center' }}>{t('teacher3-name')}</h3>
-              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher3-title')}</p>
-              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher3-description') }} />
+              <h3 style={{ textAlign: 'center' }}>{t('teacher4-name')}</h3>
+              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher4-title')}</p>
+              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher4-description') }} />
               <div className="teacher-achievements" style={{ textAlign: 'left' }}>
-                <span className="achievement">{t('teacher3-achievement1')}</span>
-                <span className="achievement">{t('teacher3-achievement2')}</span>
-                <span className="achievement">{t('teacher3-achievement3')}</span>
+                <span className="achievement">{t('teacher4-achievement1')}</span>
+                <span className="achievement">{t('teacher4-achievement2')}</span>
+                <span className="achievement">{t('teacher4-achievement3')}</span>
               </div>
             </div>
           </div>
-          
 
           <div data-animate="center">
             <h2>{t('teachers-title2')}</h2>
           </div>
 
-          {/* Teacher 3 */}
-          <div className="teacher-item" data-animate="card" data-animate-delay="200">
-          <div className="teacher-info">
-              <h3 style={{ textAlign: 'center' }}>{t('teacher3-name')}</h3>
-              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher3-title')}</p>
-              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher3-description') }} />
-              <div className="teacher-achievements" style={{ textAlign: 'left' }}>
-                <span className="achievement">{t('teacher3-achievement1')}</span>
-                <span className="achievement">{t('teacher3-achievement2')}</span>
-                <span className="achievement">{t('teacher3-achievement3')}</span>
-              </div>
-            </div>
-            <div className="teacher-image">
-              <img src="/assets/img/Eldor.PNG" alt="Aruzhan" style={{ objectFit: 'cover', borderRadius: 16 }} />
-              <img className="teacher-logo-corner right" src="/assets/img/CMUQ.png" alt="University Logo" />
-            </div>
-          </div>
-          
-          <div data-animate="center">
-            <h2>{t('teachers-title2')}</h2>
-          </div>
           {/* Swiper for teachers 4+ */}
           <div className="teacherimg-swiper-section">
             <Swiper

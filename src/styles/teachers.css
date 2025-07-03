@@ -33,6 +33,14 @@
   border: 0.0625rem solid var(--border-color);
   transition: box-shadow 0.2s;
   position: relative;
+  grid-template-areas: "image info";
+}
+
+.teacher-item .teacher-image {
+  grid-area: image;
+}
+.teacher-item .teacher-info {
+  grid-area: info;
 }
 
 .teacher-item:hover {
@@ -40,7 +48,11 @@
 }
 
 .teacher-item.reverse {
-  direction: rtl;
+  grid-template-areas: "info image";
+}
+
+.teacher-item.reverse {
+  flex-direction: row-reverse;
 }
 
 .teacher-item.reverse > * {
@@ -63,22 +75,22 @@
 
 .teacher-logo-corner {
   position: absolute;
-  top: 0.625rem !important;
-  left: 0.3125rem !important;
-  width: 9.375rem !important;
-  height: 9.375rem !important;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 8rem !important;
+  height: 8rem !important;
   object-fit: cover !important;
-  border-radius: 6.25rem !important;
+  border-radius: 50% !important;
   background: var(--bg-primary);
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.13);
   border: 0.125rem solid var(--border-color);
-  z-index: 10;
-  transform: translateY(0);
+  z-index: 20;
 }
 
 .teacher-logo-corner.right {
   left: auto !important;
-  right: 0.3125rem !important;
+  right: 0.5rem !important;
+  
 }
 
 .teacher-info h3 {
@@ -137,7 +149,7 @@
 .teacherimg-swiper-slide {
   position: relative;
   width: 100%;
-  height: 28.125rem;
+  height: 35rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,7 +281,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 31.25rem;
+    height: 40rem;
   }
 
   .teacherimg-swiper-overlay-name {
@@ -328,7 +340,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 29.6875rem;
+    height: 38rem;
   }
 
   .teacherimg-swiper-overlay-name {
@@ -387,7 +399,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 28.125rem;
+    height: 36rem;
   }
 }
 
@@ -443,7 +455,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 25rem;
+    height: 34rem;
     border-radius: 1.25rem;
   }
 
@@ -525,7 +537,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 21.25rem;
+    height: 32rem;
     border-radius: 1rem;
   }
 
@@ -607,7 +619,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 18.75rem;
+    height: 30rem;
     border-radius: 0.875rem;
   }
 
@@ -693,7 +705,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 16.25rem;
+    height: 28rem;
     border-radius: 0.75rem;
   }
 
@@ -779,7 +791,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 13.75rem;
+    height: 26rem;
     border-radius: 0.625rem;
   }
 
@@ -865,7 +877,7 @@
   }
 
   .teacherimg-swiper-slide {
-    height: 11.25rem;
+    height: 24rem;
     border-radius: 0.5rem;
   }
 
@@ -921,6 +933,17 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .teacher-image {
+    padding: 0.75rem;
+  }
+  .teacher-info {
+    padding: 0.75rem;
+  }
+  .teacher-logo-corner,
+  .teacher-logo-corner.right {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -930,5 +953,47 @@
   .teacher-item {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
+  }
+  .teacher-image {
+    padding: 0.5rem;
+  }
+  .teacher-info {
+    padding: 0.5rem;
+  }
+  .teacher-logo-corner,
+  .teacher-logo-corner.right {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .teacher-item,
+  .teacher-item.reverse {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-areas: none;
+    text-align: center;
+  }
+  .teacher-image {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .teacher-info {
+    padding: 1rem;
+  }
+  .teacher-logo-corner,
+  .teacher-logo-corner.right {
+    top: 0.5rem;
+    left: 0.5rem !important;
+    right: auto !important;
+    transform: none;
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+  .teacher-logo-corner.right {
+    left: auto !important;
+    right: 0.5rem !important;
   }
 }

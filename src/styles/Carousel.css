@@ -43,8 +43,8 @@
   padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .carousel-item-header {
   font-size: 2rem;
@@ -52,18 +52,19 @@
   margin-top: 0.5rem;
   color: var(--text-start);
   border-radius: 32px;
+  text-align: left;
 }
 .carousel-item-title {
   font-weight: 1000px!important;
   font-size: 1.2rem;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
   color: var(--text-black);
   line-height: 1.5;
 }
 .carousel-item-description {
   font-size: 0.95rem;
-  text-align: center;
+  text-align: left;
   color: var(--text-primary);
 }
 
