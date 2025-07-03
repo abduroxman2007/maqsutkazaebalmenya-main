@@ -997,3 +997,161 @@
     right: 0.5rem !important;
   }
 }
+
+.teacher-features-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0 0.5rem 0;
+}
+.teacher-feature-card {
+  position: relative;
+  width: 180px;
+  height: 110px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(56,182,255,0.08);
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.teacher-feature-card.blue {
+  background: linear-gradient(135deg, var(--primary-gradient-start), var(--primary-gradient-middle));
+  color: #fff;
+}
+.teacher-feature-card.grey {
+  /* background: var(--bg-secondary); */
+  background: rgb(247 247 247 / var(--tw-bg-opacity, 1));
+  color: var(--text-primary);
+}
+.teacher-feature-card .teacher-feature-main,
+.teacher-feature-card .teacher-feature-desc {
+  text-align: left;
+}
+.teacher-feature-card .teacher-feature-main {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.teacher-feature-card .teacher-feature-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.teacher-feature-card.blue .teacher-feature-desc {
+  color: #e0e7ef;
+}
+.teacher-feature-card .teacher-feature-circle {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.teacher-feature-card.blue .teacher-feature-circle.white {
+  background: #fff;
+}
+.teacher-feature-card.grey .teacher-feature-circle.orange {
+  background: var(--accent-warning);
+}
+.teacher-feature-card.blue:hover .teacher-feature-desc{
+  color: var(--text-secondary);
+  /* color: white; */
+}
+.teacher-feature-card.blue:hover {
+  background: rgb(247 247 247 / var(--tw-bg-opacity, 1));
+  color: var(--primary-gradient-start);
+}
+.teacher-feature-card.blue:hover .teacher-feature-circle.white {
+  background: var(--primary-gradient-middle);
+
+}
+.teacher-feature-card.grey:hover {
+  background: var(--primary-gradient-middle);
+  color: #fff;
+}
+.teacher-feature-card.grey:hover .teacher-feature-circle.orange {
+  background: #fff;
+}
+
+
+/* Custom circle coloring for second and third feature cards */
+.teacher-features-row .teacher-feature-card:nth-child(2) .teacher-feature-circle {
+  background: var(--primary-gradient-middle);
+}
+.teacher-features-row .teacher-feature-card:nth-child(2):hover .teacher-feature-desc {
+  color: var(--text-white);
+}
+
+.teacher-features-row .teacher-feature-card:nth-child(2):hover .teacher-feature-circle {
+  background: #fff;
+}
+.teacher-features-row .teacher-feature-card:nth-child(3) .teacher-feature-circle {
+  background: var(--primary-gradient-start);
+}
+.teacher-features-row .teacher-feature-card:nth-child(3):hover .teacher-feature-desc {
+  /* color: var(--text-primary); */
+  color: var(--text-white);
+}
+
+.teacher-features-row .teacher-feature-card:nth-child(3):hover{
+  background: var(--primary-gradient-start);
+}
+.teacher-features-row .teacher-feature-card:nth-child(3):hover .teacher-feature-circle {
+  background: #fff;
+}
+
+
+@media (max-width: 700px) {
+  .teacher-features-row {
+    flex-direction: row;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .teacher-feature-card {
+    width: 140px;
+    height: 90px;
+    padding: 1rem 0.7rem;
+  }
+  .teacher-feature-card .teacher-feature-main {
+    font-size: 1.5rem;
+  }
+  .teacher-feature-card .teacher-feature-desc {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 480px) {
+  .teacher-features-row {
+    gap: 0.5rem;
+  }
+  .teacher-feature-card {
+    width: 110px;
+    height: 70px;
+    padding: 0.7rem 0.4rem;
+  }
+  .teacher-feature-card .teacher-feature-main {
+    font-size: 1.15rem;
+  }
+  .teacher-feature-card .teacher-feature-desc {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 360px) {
+  .teacher-feature-card {
+    width: 90px;
+    height: 55px;
+    padding: 0.5rem 0.2rem;
+  }
+  .teacher-feature-card .teacher-feature-main {
+    font-size: 0.95rem;
+  }
+  .teacher-feature-card .teacher-feature-desc {
+    font-size: 0.6rem;
+  }
+}
