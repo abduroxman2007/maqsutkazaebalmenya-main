@@ -1,0 +1,565 @@
+.about {
+  padding: 6rem 2rem;
+  background: var(--bg-secondary);
+}
+
+.about-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 37.5rem;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-middle);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-text h3,
+.about-text ul {
+  color: var(--text-start) !important;
+}
+
+.about-form {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  box-shadow: var(--shadow);
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.about-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.about-form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 0.125rem solid var(--border-color);
+  border-radius: 0.625rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.about-form input:focus {
+  outline: none;
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 0.1875rem rgba(79, 70, 229, 0.1);
+}
+
+.about-form button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--text-primary);
+  color: white;
+  border: none;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-form button:hover {
+  background: var(--text-middle);
+  transform: translateY(-0.125rem);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  animation: iconPop 1s infinite alternate;
+}
+
+@keyframes iconPop {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.about-icon-animate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: iconPop 1.2s infinite alternate;
+}
+
+.about-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.about-feature {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: default !important;
+  transition: none !important;
+}
+
+.about-feature:hover {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Large Desktops (>=1400px) */
+@media (min-width: 87.5rem) {
+  .about {
+    padding: 7rem 2rem;
+  }
+
+  .about-container {
+    max-width: 80rem;
+  }
+
+  .about-header h2 {
+    font-size: 3rem;
+  }
+
+  .about-header p {
+    font-size: 1.375rem;
+    max-width: 43.75rem;
+  }
+
+  .about-content {
+    gap: 5rem;
+  }
+
+  .about-form {
+    padding: 2.5rem;
+  }
+
+  .about-form h3 {
+    font-size: 1.75rem;
+  }
+
+  .about-form input {
+    padding: 1.25rem;
+    font-size: 1.0625rem;
+  }
+
+  .about-form button {
+    padding: 1.25rem;
+    font-size: 1.0625rem;
+  }
+}
+
+/* Mid Desktops (1250–1399px) */
+@media (max-width: 87.4375rem) and (min-width: 78.125rem) {
+  .about {
+    padding: 6.5rem 2rem;
+  }
+
+  .about-container {
+    max-width: 78rem;
+  }
+
+  .about-header h2 {
+    font-size: 2.75rem;
+  }
+
+  .about-header p {
+    font-size: 1.3125rem;
+    max-width: 40.625rem;
+  }
+
+  .about-content {
+    gap: 4.5rem;
+  }
+
+  .about-form {
+    padding: 2.25rem;
+  }
+}
+
+/* Small Desktops (1100–1249px) */
+@media (max-width: 78.0625rem) and (min-width: 68.75rem) {
+  .about {
+    padding: 6rem 2rem;
+  }
+
+  .about-container {
+    max-width: 75rem;
+  }
+
+  .about-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-header p {
+    font-size: 1.25rem;
+    max-width: 37.5rem;
+  }
+
+  .about-content {
+    gap: 4rem;
+  }
+}
+
+/* Large Tablets (900–1099px) */
+@media (max-width: 68.6875rem) and (min-width: 56.25rem) {
+  .about {
+    padding: 5rem 1.5rem;
+  }
+
+  .about-container {
+    max-width: 62.5rem;
+  }
+
+  .about-header h2 {
+    font-size: 2.25rem;
+  }
+
+  .about-header p {
+    font-size: 1.1875rem;
+    max-width: 35rem;
+  }
+
+  .about-content {
+    gap: 3rem;
+  }
+
+  .about-form {
+    padding: 1.75rem;
+  }
+
+  .about-form h3 {
+    font-size: 1.375rem;
+  }
+
+  .about-form input {
+    padding: 0.875rem;
+  }
+
+  .about-form button {
+    padding: 0.875rem;
+  }
+}
+
+/* Tablets (768–899px) */
+@media (max-width: 56.1875rem) and (min-width: 48rem) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-container {
+    max-width: 45rem;
+  }
+
+  .about-header h2 {
+    font-size: 2rem;
+  }
+
+  .about-header p {
+    font-size: 1.125rem;
+    max-width: 32.5rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-form {
+    padding: 1.5rem;
+  }
+
+  .about-form h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-form input {
+    padding: 0.75rem;
+    font-size: 0.9375rem;
+  }
+
+  .about-form button {
+    padding: 0.75rem;
+    font-size: 0.9375rem;
+  }
+}
+
+/* Large Phones (600–767px) */
+@media (max-width: 47.9375rem) and (min-width: 37.5rem) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about-container {
+    max-width: 35rem;
+  }
+
+  .about-header {
+    margin-bottom: 3rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .about-header p {
+    font-size: 1.0625rem;
+    max-width: 30rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-form {
+    padding: 1.25rem;
+  }
+
+  .about-form h3 {
+    font-size: 1.125rem;
+  }
+
+  .about-form input {
+    padding: 0.6875rem;
+    font-size: 0.875rem;
+  }
+
+  .about-form button {
+    padding: 0.6875rem;
+    font-size: 0.875rem;
+  }
+
+  .about-features {
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .about-feature {
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Medium Phones (480–599px) */
+@media (max-width: 37.4375rem) and (min-width: 30rem) {
+  .about {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .about-container {
+    max-width: 28rem;
+  }
+
+  .about-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+    max-width: 26rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .about-form {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .about-form h3 {
+    font-size: 1.0625rem;
+  }
+
+  .about-form input {
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .about-form button {
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .about-features {
+    gap: 1rem;
+    margin: 1.25rem 0;
+  }
+
+  .about-feature {
+    gap: 0.875rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small Phones (360–479px) */
+@media (max-width: 29.9375rem) and (min-width: 22.5rem) {
+  .about {
+    padding: 2rem 0.5rem;
+  }
+
+  .about-container {
+    max-width: 21rem;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.375rem;
+  }
+
+  .about-header p {
+    font-size: 0.9375rem;
+    max-width: 20rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-form {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+  }
+
+  .about-form h3 {
+    font-size: 1rem;
+  }
+
+  .about-form input {
+    padding: 0.5625rem;
+    font-size: 0.75rem;
+  }
+
+  .about-form button {
+    padding: 0.5625rem;
+    font-size: 0.75rem;
+  }
+
+  .about-features {
+    gap: 0.875rem;
+    margin: 1rem 0;
+  }
+
+  .about-feature {
+    gap: 0.75rem;
+    margin-bottom: 0.875rem;
+  }
+}
+
+/* Extra Small Devices (<360px) */
+@media (max-width: 22.4375rem) {
+  .about {
+    padding: 1.5rem 0.375rem;
+  }
+
+  .about-container {
+    max-width: 18rem;
+  }
+
+  .about-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-header p {
+    font-size: 0.875rem;
+    max-width: 17rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-form {
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+  }
+
+  .about-form h3 {
+    font-size: 0.9375rem;
+  }
+
+  .about-form input {
+    padding: 0.5rem;
+    font-size: 0.6875rem;
+  }
+
+  .about-form button {
+    padding: 0.5rem;
+    font-size: 0.6875rem;
+  }
+
+  .about-features {
+    gap: 0.75rem;
+    margin: 0.875rem 0;
+  }
+
+  .about-feature {
+    gap: 0.625rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+  }
+}

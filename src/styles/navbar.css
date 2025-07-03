@@ -1,0 +1,699 @@
+.dynamic-island-navbar {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 75rem;
+  width: max(80vw, 75rem);
+  max-width: 90rem;
+  height: 4.75rem;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(1.125rem) saturate(180%);
+  border-radius: 9999px;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.5rem;
+  transition: all 0.35s cubic-bezier(0.4, 2, 0.6, 1);
+  z-index: 100;
+}
+
+.dynamic-island-navbar.scrolled {
+  min-width: 60rem;
+  width: max(70vw, 60rem);
+  max-width: 80rem;
+  height: 4.5rem;
+  padding: 0 2rem;
+  backdrop-filter: blur(1.5rem) saturate(220%);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.nav-left .logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-gradient-end);
+}
+
+.nav-left .logo span {
+  position: relative;
+  top: -0.3125rem;
+  display: inline-block;
+}
+
+.logo-img {
+  height: auto;
+  max-height: 4rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-center .nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-center .nav-menu a {
+  text-decoration: none;
+  color: var(--primary-gradient-end);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  font-size: 1rem;
+}
+
+.nav-center .nav-menu a:hover {
+  color: var(--primary-gradient-end);
+}
+
+.nav-center .nav-menu a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.125rem;
+  bottom: -0.3125rem;
+  left: 0;
+  background-color: var(--primary-gradient-end);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-center .nav-menu a:hover::after {
+  width: 100%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em 1.4em;
+  border-radius: 9999px;
+  background: var(--text-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 0.125rem 0.5rem 0 rgba(20, 18, 83, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s, transform 0.15s;
+  outline: none;
+  min-width: 4.375rem;
+  min-height: 2.5rem;
+}
+
+.faq-badge:focus,
+.faq-badge:hover {
+  background: var(--text-middle);
+  color: #fff;
+  box-shadow: 0 0.25rem 1rem 0 rgba(37, 99, 235, 0.13);
+  transform: translateY(-0.125rem) scale(1.04);
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.lang-dropdown-btn {
+  background: var(--bg-secondary);
+  border: 0.0625rem solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.lang-dropdown-btn:hover {
+  background: var(--border-color);
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.language-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--bg-color);
+  border: 0.0625rem solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  min-width: 9.375rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.625rem);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.language-dropdown.active .lang-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-option {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-option:hover {
+  background: var(--bg-secondary);
+}
+
+.lang-option:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.lang-option:last-child {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 1.5625rem;
+  height: 0.1875rem;
+  background: var(--text-primary);
+  margin: 0.1875rem 0;
+  transition: all 0.3s ease;
+  border-radius: 0.125rem;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(0.4375rem, -0.375rem);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(1.125rem) saturate(180%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.mobile-nav-menu a:hover {
+  color: var(--primary-color);
+  background: rgba(79, 140, 255, 0.1);
+  transform: translateY(-0.125rem);
+}
+
+.mobile-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Large Desktops (>=1400px) */
+@media (min-width: 87.5rem) {
+  .dynamic-island-navbar {
+    min-width: 80rem;
+    width: max(75vw, 80rem);
+    max-width: 100rem;
+    height: 5rem;
+    padding: 0 3rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 70rem;
+    width: max(65vw, 70rem);
+    max-width: 90rem;
+    height: 4.75rem;
+    padding: 0 2.5rem;
+  }
+
+  .nav-center .nav-menu {
+    gap: 2.5rem;
+  }
+
+  .nav-center .nav-menu a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mid Desktops (1250–1399px) */
+@media (max-width: 87.4375rem) and (min-width: 78.125rem) {
+  .dynamic-island-navbar {
+    min-width: 70rem;
+    width: max(78vw, 70rem);
+    max-width: 85rem;
+    height: 4.875rem;
+    padding: 0 2.75rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 62rem;
+    width: max(68vw, 62rem);
+    max-width: 80rem;
+    height: 4.625rem;
+    padding: 0 2.25rem;
+  }
+
+  .nav-center .nav-menu {
+    gap: 2.25rem;
+  }
+}
+
+/* Small Desktops (1100–1249px) - Hamburger menu starts here */
+@media (max-width: 78.0625rem) and (min-width: 68.75rem) {
+  .dynamic-island-navbar {
+    min-width: 60rem;
+    width: max(76vw, 60rem);
+    max-width: 75rem;
+    height: 4.75rem;
+    padding: 0 2.5rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 55rem;
+    width: max(70vw, 55rem);
+    max-width: 70rem;
+    height: 4.5rem;
+    padding: 0 2rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 5.5rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 5.25rem;
+  }
+}
+
+/* Large Tablets (900–1099px) */
+@media (max-width: 68.6875rem) and (min-width: 56.25rem) {
+  .dynamic-island-navbar {
+    min-width: 50rem;
+    width: max(85vw, 50rem);
+    max-width: 65rem;
+    height: 4.5rem;
+    padding: 0 2rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 45rem;
+    width: max(80vw, 45rem);
+    max-width: 60rem;
+    height: 4.25rem;
+    padding: 0 1.75rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 5.25rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 5rem;
+  }
+
+  .mobile-nav-menu a {
+    font-size: 1.375rem;
+  }
+}
+
+/* Tablets (768–899px) */
+@media (max-width: 56.1875rem) and (min-width: 48rem) {
+  .dynamic-island-navbar {
+    min-width: 40rem;
+    width: max(90vw, 40rem);
+    max-width: 55rem;
+    height: 4.25rem;
+    padding: 0 1.75rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 38rem;
+    width: max(85vw, 38rem);
+    max-width: 50rem;
+    height: 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 5rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 4.75rem;
+  }
+
+  .logo-img {
+    max-height: 3.5rem;
+  }
+
+  .logo span {
+    font-size: 1.375rem;
+  }
+}
+
+/* Large Phones (600–767px) */
+@media (max-width: 47.9375rem) and (min-width: 37.5rem) {
+  .dynamic-island-navbar {
+    min-width: 30rem;
+    width: max(95vw, 30rem);
+    max-width: 45rem;
+    height: 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 28rem;
+    width: max(90vw, 28rem);
+    max-width: 40rem;
+    height: 3.75rem;
+    padding: 0 1.25rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 4.75rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 4.5rem;
+  }
+
+  .logo-img {
+    max-height: 3rem;
+  }
+
+  .logo span {
+    font-size: 1.25rem;
+  }
+
+  .mobile-nav-menu a {
+    font-size: 1.25rem;
+  }
+}
+
+/* Medium Phones (480–599px) */
+@media (max-width: 37.4375rem) and (min-width: 30rem) {
+  .dynamic-island-navbar {
+    min-width: 25rem;
+    width: 95vw;
+    max-width: 35rem;
+    height: 3.75rem;
+    padding: 0 1.25rem;
+    border-radius: 1.5rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 23rem;
+    width: 90vw;
+    max-width: 32rem;
+    height: 3.5rem;
+    padding: 0 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 4.5rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 4.25rem;
+  }
+
+  .logo-img {
+    max-height: 2.75rem;
+  }
+
+  .logo span {
+    font-size: 1.125rem;
+  }
+
+  .mobile-nav-menu a {
+    font-size: 1.125rem;
+  }
+
+  .hamburger-line {
+    width: 1.25rem;
+    height: 0.15rem;
+  }
+}
+
+/* Small Phones (360–479px) */
+@media (max-width: 29.9375rem) and (min-width: 22.5rem) {
+  .dynamic-island-navbar {
+    min-width: 20rem;
+    width: 95vw;
+    max-width: 28rem;
+    height: 3.5rem;
+    padding: 0 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 18rem;
+    width: 90vw;
+    max-width: 25rem;
+    height: 3.25rem;
+    padding: 0 0.875rem;
+    border-radius: 1rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 4.25rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 4rem;
+  }
+
+  .logo-img {
+    max-height: 2.5rem;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .mobile-nav-menu a {
+    font-size: 1rem;
+  }
+
+  .hamburger-line {
+    width: 1.125rem;
+    height: 0.125rem;
+  }
+}
+
+/* Extra Small Devices (<360px) */
+@media (max-width: 22.4375rem) {
+  .dynamic-island-navbar {
+    min-width: 18rem;
+    width: 95vw;
+    max-width: 22rem;
+    height: 3.25rem;
+    padding: 0 0.875rem;
+    border-radius: 1rem;
+  }
+
+  .dynamic-island-navbar.scrolled {
+    min-width: 16rem;
+    width: 90vw;
+    max-width: 20rem;
+    height: 3rem;
+    padding: 0 0.75rem;
+    border-radius: 0.875rem;
+  }
+
+  .nav-center,
+  .nav-right {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    padding-top: 4rem;
+  }
+
+  .mobile-menu.scrolled {
+    padding-top: 3.75rem;
+  }
+
+  .logo-img {
+    max-height: 2.25rem;
+  }
+
+  .logo span {
+    font-size: 0.875rem;
+  }
+
+  .mobile-nav-menu a {
+    font-size: 0.875rem;
+    gap: 1.5rem;
+  }
+
+  .hamburger-line {
+    width: 1rem;
+    height: 0.125rem;
+  }
+
+  .mobile-controls {
+    gap: 1rem;
+  }
+}
