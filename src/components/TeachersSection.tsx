@@ -7,6 +7,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+<<<<<<< HEAD
+=======
+import HarvardLogo from '../assets/img/university-logos/Harvard_logo-5.svg';
+import AmherstLogo from '../assets/img/university-logos/Amherst.png';
+import DukeLogo from '../assets/img/university-logos/Duke-University-Logo-1.svg';
+import VanderbiltLogo from '../assets/img/university-logos/Vanderbilt-University-Logo-SVG_014.svg';
+>>>>>>> feature/university-logos
 
 const TeachersSection: React.FC = () => {
   const { t } = useTranslation();
@@ -15,18 +22,38 @@ const TeachersSection: React.FC = () => {
     {
       id: 'teacher5',
       img: '/assets/img/JasurbekUmarov.jpg',
+<<<<<<< HEAD
+=======
+      logo: HarvardLogo,
+      logoAlt: 'Harvard University Logo',
+>>>>>>> feature/university-logos
     },
     {
       id: 'teacher6',
       img: '/assets/img/OzodbekEshboboev.jpg',
+<<<<<<< HEAD
+=======
+      logo: AmherstLogo,
+      logoAlt: 'Amherst College Logo',
+>>>>>>> feature/university-logos
     },
     {
       id: 'teacher7',
       img: '/assets/img/KhusanRakhimov.jpg',
+<<<<<<< HEAD
+=======
+      logo: DukeLogo,
+      logoAlt: 'Duke University Logo',
+>>>>>>> feature/university-logos
     },
     {
       id: 'teacher8',
       img: '/assets/img/JamshidbekIzzatulloh.jpg',
+<<<<<<< HEAD
+=======
+      logo: VanderbiltLogo,
+      logoAlt: 'Vanderbilt University Logo',
+>>>>>>> feature/university-logos
     },
   ];
 
@@ -145,7 +172,18 @@ const TeachersSection: React.FC = () => {
             >
               {swiperTeachers.map((teacher, idx) => (
                 <SwiperSlide key={teacher.id + idx}>
+<<<<<<< HEAD
                   <div className="teacherimg-swiper-slide">
+=======
+                  <div className="teacherimg-swiper-slide" style={{ position: 'relative' }}>
+                    <img
+                      src={teacher.logo}
+                      alt={teacher.logoAlt}
+                      aria-label={teacher.logoAlt}
+                      tabIndex={0}
+                      className={`university-logo-corner right${teacher.id === 'teacher8' ? ' square' : ''}`}
+                    />
+>>>>>>> feature/university-logos
                     <img className="teacherimg-swiper-img" src={teacher.img} alt={t(`${teacher.id}-image-alt`)} />
                     <div className="teacherimg-swiper-overlay">
                       <div className="teacherimg-swiper-overlay-name">{t(`${teacher.id}-name`)}</div>
