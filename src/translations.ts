@@ -62,7 +62,7 @@ export const translations = {
     "start-journey": "Start Your Journey",
     
    // Teachers Section
-   "teachers-title": "Meet Our Course Mentors",
+   "teachers-title": "Guest Speakers",
    // Olimjon Teacher 1
    
    "teacher1-name": "Olimjon Uvayzov",
@@ -142,9 +142,9 @@ export const translations = {
   
     // Courses Section
    "courses-title": "Choose Your Perfect Course",
-   "course-english": "SAT English/Math $69/month ",
-   "course-full": "FULL SAT $89/month",
-   "course-ultimate": "FULL SAT + Admission Masterclasses $99/month",
+   "course-english": "SAT English | Math",
+   "course-full": "FULL SAT ",
+   "course-ultimate": "FULL SAT + Admission Masterclasses",
    popular: "Most Popular",
    "best-value": "Best Value",
    "english-feature1": "✓ 12 expert-led sessions",
@@ -256,7 +256,7 @@ export const translations = {
 
 
     // Teachers Section
-    "teachers-title": "Познакомьтесь с нашими наставниками",
+    "teachers-title": "Cпикеры",
     
     // Olimjon Teacher 1
     "teacher1-name": "Олимжон Увайзов",
@@ -353,9 +353,9 @@ export const translations = {
 
     // Courses Section
     "courses-title": "Выберите идеальный курс",
-    "course-english": "SAT English/Math $69/мес",
-    "course-full": "ПОЛНЫЙ SAT $89/мес",
-    "course-ultimate": "ПОЛНЫЙ SAT + Мастер-классы по поступлению $99/мес",
+    "course-english": "SAT English | Math",
+    "course-full": "ПОЛНЫЙ SAT ",
+    "course-ultimate": "ПОЛНЫЙ SAT + Мастер-классы по поступлению ",
     "popular": "Самый популярный",
     "best-value": "Лучшая цена",
 
@@ -463,7 +463,7 @@ export const translations = {
     "start-journey": "Safaringizni boshlang",
 
     // Teachers Section
-    "teachers-title": "Mentorlarimiz bilan tanishing",
+    "teachers-title": "Spikerlar",
 
     // Olimjon Teacher 1
     "teacher1-name": "Olimjon Uvayzov",
@@ -558,9 +558,9 @@ export const translations = {
 
     // Courses Section
     "courses-title": "Sizga mos kursni tanlang",
-    "course-english": "SAT English/Math $69/oy",
-    "course-full": "TO'LIQ SAT $89/oy",
-    "course-ultimate": "TO'LIQ SAT + Admissions Masterklasslar $99/oy",
+    "course-english": "SAT English | Math ",
+    "course-full": "TO'LIQ SAT ",
+    "course-ultimate": "TO'LIQ SAT + Admissions Masterklasslar",
     "popular": "Eng ommabop",
     "best-value": "Eng yaxshi qiymat",
 

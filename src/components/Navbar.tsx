@@ -128,13 +128,14 @@ const Navbar: React.FC = () => {
       >
         <ul className="mobile-nav-menu">
           <li><a href="#home" onClick={handleHomeClick}>{t('home')}</a></li>
-          <li><a href="#about" onClick={e => { handleNavClick(e); }}>{t('about')}</a></li>
-          <li><a href="#courses" onClick={e => { handleNavClick(e); }}>{t('courses')}</a></li>
+          <li><a href="#mission" onClick={e => { handleNavClick(e); }}>{t('about')}</a></li>
           <li><a href="#teachers" onClick={e => { handleNavClick(e); }}>{t('teachers')}</a></li>
+          <li><a href="#courses" onClick={e => { handleNavClick(e); }}>{t('courses')}</a></li>
+          <li><a href="#faq" onClick={e => { handleNavClick(e); }}>{t('faq')}</a></li>
           <li><a href="#contact" onClick={e => { handleNavClick(e); }}>{t('contact')}</a></li>
         </ul>
         <div className="mobile-controls">
-          <div className="faq-badge" onClick={() => { window.open('https://forms.gle/WrRokQZQPwQdgqSy9', '_blank'); closeMobileMenu(); }} tabIndex={0} role="button">{t('faq')}</div>
+          <div className="faq-badge" onClick={() => { window.open('https://forms.gle/WrRokQZQPwQdgqSy9', '_blank'); closeMobileMenu(); }} tabIndex={0} role="button">{t('Register')}</div>
           <div className={`language-dropdown${dropdownMobileOpen ? ' active' : ''}`}> 
             <button className="lang-dropdown-btn" onClick={toggleLanguageDropdownMobile}>
               <span id="current-lang-mobile">{lang === 'en' ? '🇺🇸 EN' : lang === 'ru' ? '🇷🇺 RU' : '🇺🇿 UZ'}</span>

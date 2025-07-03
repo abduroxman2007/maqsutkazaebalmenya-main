@@ -98,7 +98,7 @@ const TeachersSection: React.FC = () => {
             </div>
           ))}
           <div data-animate="center">
-            <h2>{t('teachers-title')}</h2>
+          <h2>{t('teachers-title2')}</h2>
           </div>
           {/* Eldor - 4th teacher */}
           <div className="teacher-item reverse" data-animate="card" data-animate-delay="400">
@@ -125,7 +125,7 @@ const TeachersSection: React.FC = () => {
             </div>
           </div>
           <div data-animate="center">
-            <h2>{t('teachers-title2')}</h2>
+            <h2>{t('teachers-title')}</h2>
           </div>
           {/* Swiper for teachers 4+ */}
           <div className="teacherimg-swiper-section">
