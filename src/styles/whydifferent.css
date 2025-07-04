@@ -13,7 +13,6 @@
 
 .why-different-container h2 {
   text-align: center;
-  font-size: 2.2rem;
   margin-bottom: 3rem;
   color: var(--text-primary);
 }
@@ -89,8 +88,8 @@
 
 .why-card-icon svg {
   display: block;
-  width: 2.2em;
-  height: 2.2em;
+  width: 3.3em;
+  height: 3.3em;
   stroke: var(--text-middle);
 }
 
@@ -113,8 +112,6 @@
 }
 
 .why-card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
   margin-bottom: 0.5rem;
   color: var(--text-primary);
   transition: color 0.3s ease;
@@ -125,13 +122,25 @@
 }
 
 .why-card-desc {
-  font-size: 1rem;
   color: var(--text-secondary);
   transition: color 0.3s ease;
 }
 
 .why-card:hover .why-card-desc {
   color: var(--text-primary);
+}
+
+.why-card-title.card-title {
+  font-size: 1.5em;
+}
+@media (max-width: 600px) {
+  .why-card-title.card-title {
+    font-size: 1.3em;
+  }
+}
+
+.why-card-desc.body-text {
+  font-weight: 300;
 }
 
 @media (max-width: 1100px) {
@@ -146,15 +155,12 @@
   }
 
   .why-different-container h2 {
-    font-size: 1.7rem;
   }
 
   .why-card-title {
-    font-size: 1rem;
   }
 
   .why-card-desc {
-    font-size: 0.9rem;
   }
 }
 
@@ -167,17 +173,9 @@
     min-height: 220px;
     padding: 1.2rem 0.7rem 1rem 0.7rem;
   }
-
-  .why-different-container h2 {
-    font-size: 1.1rem;
-  }
-
-  .why-card-title {
-    font-size: 0.85rem;
-  }
-
-  .why-card-desc {
-    font-size: 0.75rem;
+  .why-different-container h2.section-title {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+    line-height: 1.12;
   }
 }
 

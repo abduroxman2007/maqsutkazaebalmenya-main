@@ -12,6 +12,7 @@ export const translations = {
     faq: "FAQ", 
 
       "register-btn": "Register Now",
+      "contact-success": "We will contact you soon.",
     // Hero Section
 "hero-title-part1": "Achieve Your",
     "hero-title-part2": "Dream SAT Score",
@@ -86,13 +87,13 @@ export const translations = {
    "teacher2-achievement1-sub": "Chemical Engineering",
    "teacher2-achievement2-main": "800",
    "teacher2-achievement2-sub": "Perfect SAT Math score",
-   "teacher2-achievement3-main": "AMO & SIMOC",
-   "teacher2-achievement3-sub": "Winner of International Math Olympiads",
+   "teacher2-achievement3-main": "SIMOC",
+   "teacher2-achievement3-sub": "Winner of International Olympiads",
   // Aruzhan Teacher 3
    "teacher3-name": "Aruzhan Aitmukhambetova ",
    "teacher3-title": "Our next mentor is from Kazakhstan",
    "teacher3-description": "Meet Aruzhan, our SAT Mentor at Maqsadly Edu. Aruzhan has got 1520 on the SAT with a perfect Math score of 800.<br><br>🌟As an incoming freshman at Carnegie Mellon University in Qatar 🎓 (#1 University in Computer Science), Aruzhan brings a dynamic teaching style that not only covers powerful SAT strategies, but also includes gamification — an exciting and effective way to boost student engagement and performance.<br><br>📚Aruzhan is committed to helping students at Maqsadly to get their desired scores in the upcoming August exam.",
-   "teacher3-achievement1-main": "CMU Qatar",
+   "teacher3-achievement1-main": "CMUQ",
    "teacher3-achievement1-sub": "Computer Science",
    "teacher3-achievement2-main": "800",
    "teacher3-achievement2-sub": "Perfect Math Score on the SAT",
@@ -105,11 +106,11 @@ export const translations = {
    "teacher4-name": "Eldor Khamraev ",
    "teacher4-title": "✓ Head Admissions Mentor",
    "teacher4-description": "Eldor Khamraev — full-ride winner, essay expert, and your admissions mentor at Maqsadly ✨<br><br>He leads weekly seminars on building standout profiles and crafting powerful, authentic essays 📝.<br><br>With a $336,000 scholarship behind him, Eldor shares the exact strategies that got him there — giving you early access to the college admissions game while you prep for the SAT .<br><br>Learn from someone who's done it. Now it's your move. 🌟",
-   "teacher4-achievement1-main": "CMU Qatar",
+   "teacher4-achievement1-main": "CMUQ",
    "teacher4-achievement1-sub": "Business Administration",
    "teacher4-achievement2-main": "$336,000",
    "teacher4-achievement2-sub": "Full-ride Scholarships",
-   "teacher4-achievement3-main": "LaunchX & Pioneer",
+   "teacher4-achievement3-main": "LaunchX ",
    "teacher4-achievement3-sub": "International Programs",
 
    //Guest Speakers
@@ -224,7 +225,7 @@ export const translations = {
     faq: "Вопросы и ответы",
 
     "register-btn": "Зарегистрируйтесь Сейчас",
-
+    "contact-success": "Мы свяжемся с вами в ближайшее время",
     
 // Hero Section
     "hero-title-part1": "Достигни своей",
@@ -287,14 +288,14 @@ export const translations = {
     "teacher2-achievement1-sub": "Химическая инженерия",
     "teacher2-achievement2-main": "800",
     "teacher2-achievement2-sub": "Идеальный результат SAT Math",
-    "teacher2-achievement3-main": "AMO & SIMOC",
-    "teacher2-achievement3-sub": "Победитель международных олимпиад по математике",
+    "teacher2-achievement3-main": "SIMOC",
+    "teacher2-achievement3-sub": "Победитель международных олимпиад",
 
     // Aruzhan Teacher 3
     "teacher3-name": "Аружан Айтмухамбетова",
     "teacher3-title": "Наш следующий наставник из Казахстана",
     "teacher3-description": "Познакомьтесь с Аружан — наставницей SAT в Maqsadly Edu. Она набрала 1520 баллов на SAT, включая идеальные 800 по математике.<br><br>🌟Будущая студентка Carnegie Mellon University в Катаре 🎓 (#1 в мире по компьютерным наукам), Аружан использует динамичный стиль преподавания, который включает не только мощные стратегии SAT, но и геймификацию — увлекательный и эффективный способ повысить вовлеченность и результативность студентов.<br><br>📚Аружан стремится помочь студентам Maqsadly достичь желаемых баллов на предстоящем августовском экзамене.",
-    "teacher3-achievement1-main": "CMU Qatar",
+    "teacher3-achievement1-main": "CMUQ",
     "teacher3-achievement1-sub": "Компьютерные науки",
     "teacher3-achievement2-main": "800",
     "teacher3-achievement2-sub": "Идеальный результат по математике SAT",
@@ -308,11 +309,11 @@ export const translations = {
     "teacher4-name": "Элдор Хамраев",
     "teacher4-title": "✓ Главный наставник по поступлению",
     "teacher4-description": "Элдор Хамраев — обладатель полной стипендии, эксперт по эссе и ваш наставник по поступлению в Maqsadly ✨<br><br>Он проводит еженедельные семинары по созданию выдающихся профилей и написанию сильных, искренних эссе 📝.<br><br>Стипендия на $336,000 — это результат стратегий, которыми он делится с вами, давая ранний доступ к миру университетских заявок, пока вы готовитесь к SAT .<br><br>Учитесь у того, кто прошел этот путь. Теперь ваш ход. 🌟",
-    "teacher4-achievement1-main": "CMU Qatar",
+    "teacher4-achievement1-main": "CMUQ",
     "teacher4-achievement1-sub": "Бизнес-администрирование",
     "teacher4-achievement2-main": "$336,000",
     "teacher4-achievement2-sub": "Полная стипендия",
-    "teacher4-achievement3-main": "LaunchX & Pioneer",
+    "teacher4-achievement3-main": "LaunchX",
     "teacher4-achievement3-sub": "Международные программы",
 
     
@@ -444,6 +445,7 @@ export const translations = {
     "contact": "Bog'lanish",
     "faq": "Savol-javoblar",
     "register-btn": "Hoziroq Regestratsiyadan O'ting",
+    "contact-success": "Tez orada siz bilan bog'lanamiz",
     // Hero Section
     "hero-title-part1": "Orzuyingizdagi",
     "hero-title-part2": "SAT natijasiga erishing",
@@ -505,14 +507,14 @@ export const translations = {
     "teacher2-achievement1-sub": "Kimyo muhandisligi",
     "teacher2-achievement2-main": "800",
     "teacher2-achievement2-sub": "SAT Math'da maksimal natija",
-    "teacher2-achievement3-main": "AMO & SIMOC",
-    "teacher2-achievement3-sub": "Xalqaro olimpiadalar g'olibi",
+    "teacher2-achievement3-main": "SIMOC",
+    "teacher2-achievement3-sub": "Olimpiadalar g'olibi",
 
     // Aruzhan Teacher 3
     "teacher3-name": "Aruzhan Aitmukhambetova",
     "teacher3-title": "Qozog'istondan SAT mentori",
     "teacher3-description": "Bu — Aruzhan, Maqsadly'dagi SAT mentoringiz. U 1520 SAT natijasiga ega va Math bo'yicha mukammal 800 ballni qo'lga kiritgan.<br><br>🌟 Carnegie Mellon University Qatar (dunyoning #1 kompyuter fanlari bo'yicha universiteti)ga talaba sifatida qabul qilingan Aruzhan darslarida nafaqat kuchli strategiyalar, balki gamifikatsiya (o'yinga asoslangan o'rganish) orqali o'quvchilarni ilhomlantiruvchi yondashuvni taqdim etadi.<br><br>📚 Maqsadly'dagi o'quvchilarning avgustdagi imtihonda yuqori natijaga erishishida u faol yordam beradi.",
-    "teacher3-achievement1-main": "CMU Qatar",
+    "teacher3-achievement1-main": "CMUQ",
     "teacher3-achievement1-sub": "Kompyuter fanlari",
     "teacher3-achievement2-main": "800",
     "teacher3-achievement2-sub": "SAT Math'da mukammal natija",
@@ -526,11 +528,11 @@ export const translations = {
     "teacher4-name": "Eldor Xamraev",
     "teacher4-title": "✓ Bosh admissions mentori",
     "teacher4-description": "Eldor Xamraev — to'liq grant sohibi, esse mutaxassisi va sizning admissions mentoringiz ✨<br><br>U har hafta ariza portfeli yaratish va kuchli, samimiy esse yozishga bag'ishlangan seminarlar o'tkazadi.<br><br>$336,000 stipendiyani qo'lga kiritgan Eldor sizga aynan shu natijaga olib kelgan strategiyalarni o'rgatadi. SATga tayyorgarlik bilan birga admissions jarayonida ham erta start oling.<br><br>U buni bajargan. Endi sizning navbatingiz. 🌟",
-    "teacher4-achievement1-main": "CMU Qatar",
+    "teacher4-achievement1-main": "CMUQ",
     "teacher4-achievement1-sub": "Biznes boshqaruvi",
     "teacher4-achievement2-main": "$336,000",
     "teacher4-achievement2-sub": "To'liq grant (full-ride)",
-    "teacher4-achievement3-main": "LaunchX & Pioneer",
+    "teacher4-achievement3-main": "LaunchX ",
     "teacher4-achievement3-sub": "Xalqaro ta'lim dasturlari",
 
     // Guest Speakers

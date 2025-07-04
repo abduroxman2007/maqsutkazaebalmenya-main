@@ -117,6 +117,55 @@
   background: #1558b0;
 }
 
+.brochure-modal-success-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.2rem 0 1.2rem 0;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.45);
+  box-shadow: 0 4px 24px rgba(16, 185, 129, 0.10);
+  min-width: 260px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1.5px solid rgba(22,163,74,0.13);
+}
+.brochure-modal-success-checkmark {
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brochure-modal-success-checkmark .check-circle {
+  stroke: #16a34a !important;
+  stroke-width: 3.5;
+  fill: none;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-miterlimit: 10;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  animation-delay: 0.2s;
+}
+.brochure-modal-success-checkmark .check {
+  stroke: #16a34a !important;
+  stroke-width: 3.5;
+  fill: none;
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  animation-delay: 0.8s;
+}
+.brochure-modal-success-message {
+  font-weight: 800;
+  color: #16a34a;
+  font-size: 1.45rem;
+  margin-top: 0.5rem;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
 /* Tablet responsiveness */
 @media (max-width: 900px) {
   .brochure-modal {
@@ -169,5 +218,17 @@
     width: 2rem;
     height: 2rem;
     font-size: 1.2rem;
+  }
+  .brochure-modal-success-card {
+    padding: 1.2rem 0 0.7rem 0;
+    border-radius: 14px;
+    min-width: 0;
+  }
+  .brochure-modal-success-message {
+    font-size: 1.05rem;
+  }
+  .brochure-modal-success-checkmark svg {
+    width: 56px !important;
+    height: 56px !important;
   }
 } 

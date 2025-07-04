@@ -22,12 +22,12 @@ const HeroSection: React.FC = () => {
           delay={120}
           animateBy="words"
           direction="top"
-          className="hero-title"
+          className="section-title hero-title"
         />
         <div className="hero-highlight">
           <RotatingText
             texts={[t('hero-title-part2'), t('hero-title-part3')]}
-            mainClassName="px-12 py-4 bg-cyan-300 text-black font-extrabold text-[4rem] rounded-3xl shadow-xl overflow-hidden justify-center"
+            mainClassName="px-12 py-4 bg-cyan-300 text-black card-title rounded-3xl shadow-xl overflow-hidden justify-center"
             staggerFrom={"last"}
             initial={{ y: "100%", opacity: 0, filter: 'blur(8px)' }}
             animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
           delay={60}
           animateBy="words"
           direction="top"
-          className="hero-description"
+          className="hero-description body-text"
         />
         <div className="hero-buttons">
           <motion.button

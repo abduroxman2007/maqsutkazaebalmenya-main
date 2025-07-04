@@ -156,3 +156,29 @@ html, body {
   font-style: normal;
 }
 
+.section-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.13;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5em;
+}
+.card-title {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 0.3em;
+}
+.body-text {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.label-text {
+  font-size: 0.97rem;
+  font-weight: 350;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+}
+

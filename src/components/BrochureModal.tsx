@@ -87,12 +87,14 @@ const BrochureModal: React.FC = () => {
           Request call!
         </div>
         {showSuccess ? (
-          <div className="contact-success-checkmark" style={{marginTop: '2rem', textAlign: 'center'}}>
-            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style={{width: '60px', height: '60px', display: 'block', margin: '0 auto'}}>
-              <circle className="check-circle" cx="26" cy="26" r="23" fill="none"/>
-              <path className="check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-            </svg>
-            <div style={{fontWeight: 700, color: '#38b6ff', fontSize: '1.2rem', marginTop: '0.5rem'}}>
+          <div className="brochure-modal-success-card">
+            <div className="brochure-modal-success-checkmark">
+              <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style={{width: '80px', height: '80px', display: 'block', margin: '0 auto'}}>
+                <circle className="check-circle" cx="26" cy="26" r="23" fill="none"/>
+                <path className="check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+            </div>
+            <div className="brochure-modal-success-message">
               {t('contact-success') || 'Thank you for your interest! We will contact you soon.'}
             </div>
           </div>

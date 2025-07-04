@@ -14,9 +14,9 @@ const MissionSection: React.FC = () => {
             <path d="M7 12v5a5 5 0 0 0 10 0v-5" />
           </svg>
         </div>
-        <h2 className="mission-title">{t('mission-headline')}</h2>
+        <h2 className="mission-title section-title">{t('mission-headline')}</h2>
         <div className="mission-underline"></div>
-        <p className="mission-statement">{t('mission-subtext')}</p>
+        <p className="mission-statement body-text">{t('mission-subtext')}</p>
       </div>
     </section>
   );

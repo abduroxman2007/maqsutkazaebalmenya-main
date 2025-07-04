@@ -8,7 +8,7 @@ const WhyDifferentSection: React.FC = () => {
     <section className="why-different-section" data-animate="fade-in-up">
       <div className="why-different-container">
         <div data-animate="center">
-          <h2>{t('why-different-title')}</h2>
+          <h2 className="section-title">{t('why-different-title')}</h2>
         </div>
         <div className="why-different-cards">
           {/* Card 1 */}
@@ -30,8 +30,8 @@ const WhyDifferentSection: React.FC = () => {
                 </svg>
               </span>
               <div data-animate="left">
-                <div className="why-card-title">{t('why-card1-title')}</div>
-                <div className="why-card-desc">{t('why-card1-desc')}</div>
+                <div className="why-card-title card-title">{t('why-card1-title')}</div>
+                <div className="why-card-desc body-text">{t('why-card1-desc')}</div>
               </div>
             </div>
           </div>
@@ -52,8 +52,8 @@ const WhyDifferentSection: React.FC = () => {
                   <polyline points="17 6 23 6 23 12" />
                 </svg>
               </span>
-              <div className="why-card-title">{t('why-card2-title')}</div>
-              <div className="why-card-desc">{t('why-card2-desc')}</div>
+              <div className="why-card-title card-title">{t('why-card2-title')}</div>
+              <div className="why-card-desc body-text">{t('why-card2-desc')}</div>
             </div>
           </div>
           {/* Card 3 */}
@@ -74,8 +74,8 @@ const WhyDifferentSection: React.FC = () => {
                   <path d="M12 8h.01" />
                 </svg>
               </span>
-              <div className="why-card-title">{t('why-card3-title')}</div>
-              <div className="why-card-desc">{t('why-card3-desc')}</div>
+              <div className="why-card-title card-title">{t('why-card3-title')}</div>
+              <div className="why-card-desc body-text">{t('why-card3-desc')}</div>
             </div>
           </div>
           {/* Card 4 */}
@@ -95,8 +95,8 @@ const WhyDifferentSection: React.FC = () => {
                   <path d="M14 2H6a2 2 0 0 0-2 2v1" />
                 </svg>
               </span>
-              <div className="why-card-title">{t('why-card4-title')}</div>
-              <div className="why-card-desc">{t('why-card4-desc')}</div>
+              <div className="why-card-title card-title">{t('why-card4-title')}</div>
+              <div className="why-card-desc body-text">{t('why-card4-desc')}</div>
             </div>
           </div>
         </div>

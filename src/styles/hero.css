@@ -34,12 +34,9 @@ h5,
 h6 {
   color: var(--text-white);
   text-shadow: 0 0.125rem 0.5rem rgba(20, 18, 83, 0.1);
-  font-weight: 800;
 }
 
 .hero-title {
-  font-size: 4.5rem;
-  font-weight: 800;
   margin-bottom: var(--spacing-lg);
   text-align: center;
   line-height: 1.1;
@@ -56,7 +53,6 @@ h6 {
   max-width: 50rem;
   text-align: center;
   color: var(--text-white);
-  font-size: 1.25rem;
   line-height: 1.5;
   padding: 0;
   display: block;
@@ -137,11 +133,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 5.5rem;
   }
 
   .hero-description {
-    font-size: 1.375rem;
     max-width: 55rem;
   }
 
@@ -164,11 +158,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 5rem;
   }
 
   .hero-description {
-    font-size: 1.3125rem;
     max-width: 52.5rem;
   }
 
@@ -186,11 +178,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 4.5rem;
   }
 
   .hero-description {
-    font-size: 1.25rem;
     max-width: 50rem;
   }
 
@@ -210,12 +200,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 4rem;
   }
 
   .hero-description {
-    font-size: 1.1875rem;
-    max-width: 45rem;
   }
 
   .cta-button {
@@ -239,12 +226,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 3.5rem;
   }
 
   .hero-description {
-    font-size: 1.125rem;
-    max-width: 40rem;
   }
 
   .cta-button {
@@ -268,12 +252,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 3rem;
   }
 
   .hero-description {
-    font-size: 1.0625rem;
-    max-width: 32.5rem;
   }
 
   .cta-button {
@@ -302,12 +283,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 2.5rem;
   }
 
   .hero-description {
-    font-size: 1rem;
-    max-width: 26rem;
   }
 
   .cta-button {
@@ -338,12 +316,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 2rem;
   }
 
   .hero-description {
-    font-size: 0.9375rem;
-    max-width: 20rem;
   }
 
   .cta-button {
@@ -374,12 +349,9 @@ h6 {
   }
 
   .hero-title {
-    font-size: 1.75rem;
   }
 
   .hero-description {
-    font-size: 0.875rem;
-    max-width: 17rem;
   }
 
   .cta-button {
@@ -397,5 +369,23 @@ h6 {
   .trust-badge {
     font-size: 0.75rem;
     padding: 0.1875rem 0.625rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title.section-title {
+    font-size: clamp(2.5rem, 9vw, 3.2rem);
+    line-height: 1.12;
+  }
+  .hero-buttons {
+    margin-top: 3.2rem !important;
+    gap: 1.5rem;
+  }
+  .cta-button {
+    font-size: 1.35rem !important;
+    padding: 1.25rem 3rem !important;
+    min-width: 15rem !important;
+    font-weight: 700 !important;
+    border-radius: 1.1rem !important;
   }
 }

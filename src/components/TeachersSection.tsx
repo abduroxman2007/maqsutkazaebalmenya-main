@@ -91,9 +91,9 @@ const TeachersSection: React.FC = () => {
                 <img src={teacher.img} alt={t(`${teacher.id}-image-alt`)} style={{ objectFit: 'cover', borderRadius: 16 }} />
               </div>
               <div className="teacher-info">
-                <h3 style={{ textAlign: 'center' }}>{t(`${teacher.id}-name`)}</h3>
-                <p className="teacher-title" style={{ textAlign: 'center' }}>{t(`${teacher.id}-title`)}</p>
-                <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t(`${teacher.id}-description`) }} />
+                <h3 className="card-title" style={{ textAlign: 'center' }}>{t(`${teacher.id}-name`)}</h3>
+                <p className="teacher-title body-text" style={{ textAlign: 'center' }}>{t(`${teacher.id}-title`)}</p>
+                <p className="teacher-description body-text" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t(`${teacher.id}-description`) }} />
                 <div className="teacher-features-row">
                   {[0, 1, 2].map((i) => (
                     <div
@@ -119,9 +119,9 @@ const TeachersSection: React.FC = () => {
               <img src="/assets/img/Eldor.PNG" alt={t('teacher4-image-alt')} style={{ objectFit: 'cover', borderRadius: 16 }} />
             </div>
             <div className="teacher-info">
-              <h3 style={{ textAlign: 'center' }}>{t('teacher4-name')}</h3>
-              <p className="teacher-title" style={{ textAlign: 'center' }}>{t('teacher4-title')}</p>
-              <p className="teacher-description" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher4-description') }} />
+              <h3 className="card-title" style={{ textAlign: 'center' }}>{t('teacher4-name')}</h3>
+              <p className="teacher-title body-text" style={{ textAlign: 'center' }}>{t('teacher4-title')}</p>
+              <p className="teacher-description body-text" style={{ textAlign: 'left' }} dangerouslySetInnerHTML={{ __html: t('teacher4-description') }} />
               <div className="teacher-features-row">
                 {[0, 1, 2].map((i) => (
                   <div
@@ -186,4 +186,4 @@ const TeachersSection: React.FC = () => {
   );
 };
 
-export default TeachersSection; 
+export default TeachersSection;
