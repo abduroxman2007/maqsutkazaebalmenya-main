@@ -66,7 +66,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--main-font) !important;
-  font-weight: inherit !important;
+  /* font-weight: inherit !important; */
 }
 
 html, body, * {
@@ -75,12 +75,12 @@ html, body, * {
 
 body, * {
   font-family: var(--main-font) !important;
-  font-weight: 400 !important;
+  /* font-weight: 400 !important; */
 }
 
 h1, h2, h3, h4, h5, h6, .cta-button {
   font-family: var(--main-font) !important;
-  font-weight: 400 !important;
+  /* font-weight: 400 !important; */
   letter-spacing: -0.01em;
   animation: fadeInUp 0.8s cubic-bezier(.4,2,.6,1);
 }
@@ -180,5 +180,9 @@ html, body {
   font-weight: 350;
   letter-spacing: 0.01em;
   color: var(--text-secondary);
+}
+
+.cta-button {
+  font-weight: 700 !important;
 }
 

@@ -117,10 +117,10 @@ export const translations = {
    "teachers-title3": "Guest Speakers",
    // Jasurbek Teacher 5
    "teacher5-name": "Jasurbek Umarov",
-   "teacher5-title": "Harvard Admit, Class of 2029",
+   "teacher5-title": "Harvard Admit",
    "teacher5-achievement1": "✓ Mechanical Engineering",
    "teacher5-achievement2": "✓ $392,000 Full-Ride Scholarship",
-   "teacher5-achievement3": "✓ Admissions Mentor",
+   "teacher5-achievement3": "✓ Professional Mnemonicist",
 
    // Ozodbek Teacher 6
    "teacher6-name": "Ozodbek Eshboboev",
@@ -330,10 +330,10 @@ export const translations = {
 
     // Jasurbek Teacher 5
     "teacher5-name": "Жасурбек Умаров",
-    "teacher5-title": "Поступил в Harvard, Класс 2029",
+    "teacher5-title": "Поступил в Harvard",
     "teacher5-achievement1": "✓ Механическая инженерия",
     "teacher5-achievement2": "✓ Полная стипендия $392,000",
-    "teacher5-achievement3": "✓ Наставник по поступлению",
+    "teacher5-achievement3": "✓ Профессиональный мнемонист",
 
     // Ozodbek Teacher 6
     "teacher6-name": "Озодбек Эшбобоев",
@@ -554,10 +554,10 @@ export const translations = {
 
     // Jasurbek
     "teacher5-name": "Jasurbek Umarov",
-    "teacher5-title": "Harvard universitetiga qabul, 2029-yil sinfi",
+    "teacher5-title": "Harvard universitetiga qabul",
     "teacher5-achievement1": "✓ Mexanika muhandisligi",
     "teacher5-achievement2": "✓ $392,000 to'liq stipendiya",
-    "teacher5-achievement3": "✓ Admissions mentori",
+    "teacher5-achievement3": "✓ Mnemonika bo'yicha Mutaxassis",
 
     // Ozodbek
     "teacher6-name": "Ozodbek Eshboboev",
