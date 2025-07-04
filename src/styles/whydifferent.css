@@ -166,16 +166,18 @@
 
 @media (max-width: 600px) {
   .why-different-section {
-    padding: 2rem 0.5rem 1rem;
+    padding: 2.5rem 0.1rem 2.5rem 0.1rem;
   }
-
+  .why-different-cards {
+    gap: 5rem !important;
+    padding: 0 0.1rem !important;
+    justify-items: center;
+  }
   .why-card {
-    min-height: 220px;
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
-  }
-  .why-different-container h2.section-title {
-    font-size: clamp(2.2rem, 8vw, 2.8rem);
-    line-height: 1.12;
+    min-height: 140px;
+    padding: 0.7rem 0.1rem 0.7rem 0.1rem;
+    max-width: 180px;
+    margin: 0 auto;
   }
 }
 

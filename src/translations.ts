@@ -117,28 +117,28 @@ export const translations = {
    "teachers-title3": "Guest Speakers",
    // Jasurbek Teacher 5
    "teacher5-name": "Jasurbek Umarov",
-   "teacher5-title": "Harvard Admit & Mechanical Engineering",
-   "teacher5-achievement1": "✓ Harvard Admit, Class of 2029",
+   "teacher5-title": "Harvard Admit, Class of 2029",
+   "teacher5-achievement1": "✓ Mechanical Engineering",
    "teacher5-achievement2": "✓ $392,000 Full-Ride Scholarship",
    "teacher5-achievement3": "✓ Admissions Mentor",
 
    // Ozodbek Teacher 6
    "teacher6-name": "Ozodbek Eshboboev",
-   "teacher6-title": "Amherst College Admit & Guest Speaker",
-   "teacher6-achievement1": "✓ Amherst College Admit",
+   "teacher6-title": "Amherst College Admit",
+   "teacher6-achievement1": "✓ Liberal Arts College in the US",
    "teacher6-achievement2": "✓ $400,000 Full-Ride Scholarship",
    "teacher6-achievement3": "✓ Education & Policy Researcher",
 
    // Khusan Teacher 7
    "teacher7-name": "Khusan Rakhimov",
    "teacher7-title": "Duke University Admit",
-   "teacher7-achievement1": "✓ Duke University Admit",
+   "teacher7-achievement1": "✓ Economics | Social Entrepreneurship",
    "teacher7-achievement2": "✓ Karsh International Scholar",
    "teacher7-achievement3": "✓ $400,000+ Scholarship",
 
    // Jamshidbek Teacher 8
    "teacher8-name": "Jamshidbek Izzatulloh",
-   "teacher8-title": "Founder of Miyashunos",
+   "teacher8-title": "Vanderbilt University Admit",
    "teacher8-achievement1": "✓ Founder of Miyashunos",
    "teacher8-achievement2": "✓ $370,000 Full-Ride Scholarship",
    "teacher8-achievement3": "✓ Cognitive Science",
@@ -330,31 +330,31 @@ export const translations = {
 
     // Jasurbek Teacher 5
     "teacher5-name": "Жасурбек Умаров",
-    "teacher5-title": "Поступил в Harvard, Механическая инженерия",
-    "teacher5-achievement1": "✓ Поступил в Harvard, Класс 2029",
+    "teacher5-title": "Поступил в Harvard, Класс 2029",
+    "teacher5-achievement1": "✓ Механическая инженерия",
     "teacher5-achievement2": "✓ Полная стипендия $392,000",
     "teacher5-achievement3": "✓ Наставник по поступлению",
 
     // Ozodbek Teacher 6
     "teacher6-name": "Озодбек Эшбобоев",
-    "teacher6-title": "Поступил в Amherst College, Приглашённый спикер",
-    "teacher6-achievement1": "✓ Поступил в Amherst College",
+    "teacher6-title": "Поступил в Amherst College",
+    "teacher6-achievement1": "✓ Либеральные искусства в США",
     "teacher6-achievement2": "✓ Полная стипендия $400,000",
     "teacher6-achievement3": "✓ Исследователь в области образования и политики",
 
     // Khusan Teacher 7
     "teacher7-name": "Хусан Рахимов",
-    "teacher7-title": "Поступил в Duke университет",
-    "teacher7-achievement1": "✓ Поступил в Duke University",
+    "teacher7-title": "Поступил в Duke University",
+    "teacher7-achievement1": "✓ Экономика | Социальное предпринимательство",
     "teacher7-achievement2": "✓ Международный стипендиат Karsh",
-    "teacher7-achievement3": "✓ Стипендия на сумму $400,000+",
+    "teacher7-achievement3": "✓ $400,000+ grant",
 
     // Jamshidbek Teacher 8
     "teacher8-name": "Джамшидбек Иззатулло",
-    "teacher8-title": "Поступил в Vanderbilt",
-    "teacher8-achievement1": "✓ Основатель платформы Miyashunos",
+    "teacher8-title": "Поступил в Vanderbilt University",
+    "teacher8-achievement1": "✓ Основатель Miyashunos",
     "teacher8-achievement2": "✓ Полная стипендия $370,000",
-    "teacher8-achievement3": "✓ Исследования мышления и сознания",
+    "teacher8-achievement3": "✓ Когнитивные науки",
 
     // What You Will Learn Section
     "learn-title": "Что вы получите после прохождения курса:",
@@ -546,7 +546,7 @@ export const translations = {
     "teacher4-achievement1-sub": "Biznes boshqaruvi",
     "teacher4-achievement2-main": "$336,000",
     "teacher4-achievement2-sub": "To'liq grant (full-ride)",
-    "teacher4-achievement3-main": "LaunchX ",
+    "teacher4-achievement3-main": "LaunchX",
     "teacher4-achievement3-sub": "Xalqaro ta'lim dasturlari",
 
     // Guest Speakers
@@ -554,22 +554,22 @@ export const translations = {
 
     // Jasurbek
     "teacher5-name": "Jasurbek Umarov",
-    "teacher5-title": "Harvard talabasi — Mexanika muhandisligi",
-    "teacher5-achievement1": "✓ Harvard universitetiga qabul, 2029-yil sinfi",
+    "teacher5-title": "Harvard universitetiga qabul, 2029-yil sinfi",
+    "teacher5-achievement1": "✓ Mexanika muhandisligi",
     "teacher5-achievement2": "✓ $392,000 to'liq stipendiya",
     "teacher5-achievement3": "✓ Admissions mentori",
 
     // Ozodbek
     "teacher6-name": "Ozodbek Eshboboev",
-    "teacher6-title": "Amherst College talabasi — Mehmon Spiker",
-    "teacher6-achievement1": "✓ Amherst College talabasi",
+    "teacher6-title": "Amherst College talabasi",
+    "teacher6-achievement1": "✓ AQShdagi Liberal Arts kolleji",
     "teacher6-achievement2": "✓ $400,000 to'liq stipendiya",
     "teacher6-achievement3": "✓ Ta'lim va siyosat tadqiqotchisi",
 
     // Khusan
     "teacher7-name": "Khusan Rahimov",
     "teacher7-title": "Duke University talabasi",
-    "teacher7-achievement1": "✓ Duke University talabasi",
+    "teacher7-achievement1": "✓ Iqtisodiyot | Ijtimoiy tadbirkorlik",
     "teacher7-achievement2": "✓ Karsh International stipendiyasi",
     "teacher7-achievement3": "✓ $400,000+ grant",
 
@@ -578,7 +578,7 @@ export const translations = {
     "teacher8-title": "Vanderbilt University talabasi",
     "teacher8-achievement1": "✓ Miyashunos asoschisi",
     "teacher8-achievement2": "✓ $370,000 to'liq stipendiya",
-    "teacher8-achievement3": "✓ Kognitiv fanlar yo'nalishi",
+    "teacher8-achievement3": "✓ Kognitiv fanlar",
 
     // What You Will Learn
     "learn-title": "Kursdan keyin nimalarga ega bo'lasiz:",

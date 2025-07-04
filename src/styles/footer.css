@@ -123,3 +123,15 @@
     height: 3.7rem !important;
   }
 }
+
+/* Remove underline from phone links in the footer */
+.footer-modern a[href^="tel:"],
+.footer-content a[href^="tel:"] {
+  text-decoration: none !important;
+}
+.footer-modern a[href^="tel:"]:hover,
+.footer-content a[href^="tel:"]:hover,
+.footer-modern a[href^="tel:"]:focus,
+.footer-content a[href^="tel:"]:focus {
+  text-decoration: none !important;
+}

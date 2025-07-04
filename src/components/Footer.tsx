@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
       <div style={{ width: '100%', margin: '0 auto', marginTop: '0', marginBottom: '0', background: 'var(--primary-gradient-end)' }}>
         <div className="footer-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1.2rem 0', borderTop: '1.5px solid #e0e7ef' }}>
           <span style={{ color: '#fff', fontWeight: 600, fontSize: '1rem', paddingTop: '15px'}}>{t('footer-copyright-left')}</span>
-          <span style={{ color: '#fff', fontWeight: 600, fontSize: '1rem' }}>{t('footer-copyright-right')}</span>
+          <span style={{ color: '#fff', fontWeight: 600, fontSize: '1rem', paddingBottom: '15px'}}>{t('footer-copyright-right')}</span>
         </div>
       </div>
     </>
