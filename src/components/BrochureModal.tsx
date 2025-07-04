@@ -53,7 +53,7 @@ const BrochureModal: React.FC = () => {
       setPhone('');
       setTimeout(() => {
         setShowSuccess(false);
-        setOpen(false);
+      setOpen(false);
       }, 2000);
     } else {
       alert(t('contact-error') || 'Please fill in all fields.');

@@ -46,12 +46,12 @@
 
 .contact-form input,
 .contact-form textarea {
-  padding: 1rem;
+  padding: 1.25rem 1.1rem;
   border: 0.125rem solid var(--border-color);
-  border-radius: 0.625rem;
+  border-radius: 0.75rem;
   background: var(--bg-color);
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.18rem;
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -66,10 +66,10 @@
 .contact-form button {
   background: var(--primary-gradient-end);
   color: var(--text-white);
-  padding: 1rem;
-  border-radius: 0.625rem;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 1.25rem 1.1rem;
+  border-radius: 0.75rem;
+  font-size: 1.18rem;
+  font-weight: 700;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -509,5 +509,25 @@
   .contact-form button {
     padding: 0.5rem;
     font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.12rem;
+    padding: 1.1rem 1rem;
+    border-radius: 0.7rem;
+  }
+  .contact-form button {
+    font-size: 1.12rem;
+    padding: 1.1rem 1rem;
+    border-radius: 0.7rem;
+  }
+  .contact-item strong {
+    font-size: 1.25rem;
+  }
+  .contact-item span {
+    font-size: 1.15rem;
   }
 }

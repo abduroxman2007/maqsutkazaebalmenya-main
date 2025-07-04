@@ -22,7 +22,7 @@ const WhatWillLearnSection: React.FC = () => {
     <section className="what-will-learn-section" data-animate="fade-in-up">
       <div className="what-will-learn-container">
         <div data-animate="center" className="what-will-learn-header">
-          <h2>{t('learn-title')}</h2>
+          <h2 className="section-title">{t('learn-title')}</h2>
         </div>
         <Carousel items={items} baseWidth={800} autoplay autoplayDelay={3000} pauseOnHover loop />
       </div>

@@ -38,7 +38,7 @@ export const translations = {
     "why-card4-desc": "As this is our first launch, we are committed to delivering the highest quality instruction by actively gathering student feedback and continuously improving our lessons. This approach helps us build a purposeful community and create an experience that truly supports each student’s growth.",
 
 
-    "learn-title": "What will gain after completing the course:",
+    "learn-title": "What will you gain after completing the course:",
     "learn1": "Master SAT test-taking strategies for each section (Reading, Writing, Math)",
     "learn2": "Boost your SAT score through targeted practice and personalized feedback",
     "learn3": "Understand and apply proven techniques for time management and accuracy",
@@ -179,7 +179,14 @@ export const translations = {
    "faq.question2": "How is Maqsadly different from other SAT courses?",
    "faq.answer2": " Unlike typical test prep centers, Maqsadly combines expert-led SAT instruction with weekly admissions masterclasses led by successful admits from Harvard, CMUQ, Duke, Amherst, and more. We also cap enrollment to ensure personalized mentorship.",
    "faq.question3": "What topics are covered in the Admissions Masterclasses?",
-   "faq.answer3": "Our masterclasses cover the entire application process, including:\n ✅ Personal statement writing\n ✅ Supplemental essays\n ✅ Building a college list\n ✅ Extracurricular strategy\n ✅ Avoiding red flags\n ✅ Real application reviews and tips from Top 20 university admits",
+   "faq.answer3": `Our masterclasses cover the entire application process, including:
+
+✅ Personal statement writing
+✅ Supplemental essays
+✅ Building a college list
+✅ Extracurricular strategy
+✅ Avoiding red flags
+✅ Real application reviews and tips from Top 20 university admits`,
    "faq.question4": "Who are the instructors and mentors?",
    "faq.answer4": " You'll be guided by mentors who have scored 750+ in English and 800 in Math on the SAT, won international Olympiads, and earned admission to world-renowned universities. They share not just theory, but the exact strategies they used to succeed.",
    "faq.question5": " How long is the course and what is the schedule?",
@@ -408,7 +415,14 @@ export const translations = {
     "faq.answer2": "В отличие от обычных подготовительных центров, Maqsadly сочетает занятия по SAT под руководством экспертов с еженедельными мастер-классами по поступлению, проводимыми студентами, поступившими в Harvard, CMUQ, Duke, Amherst и другие вузы. Также мы ограничиваем количество участников, чтобы обеспечить персональное наставничество.",
 
     "faq.question3": "Какие темы охватываются на мастер-классах по поступлению?",
-    "faq.answer3": "Наши мастер-классы охватывают весь процесс подачи заявлений, включая:\n ✅ Написание персонального эссе\n ✅ Дополнительные эссе\n ✅ Составление списка университетов\n ✅ Внеклассные стратегии\n ✅ Как избежать 'красных флагов'\n ✅ Разбор настоящих заявок и советы от студентов топ-20 вузов",
+    "faq.answer3": `Наши мастер-классы охватывают весь процесс подачи заявлений, включая:
+
+✅ Написание персонального эссе
+✅ Дополнительные эссе
+✅ Составление списка университетов
+✅ Внеклассные стратегии
+✅ Как избежать "red flags"
+✅ Реальные примеры заявок и советы от поступивших в топ-20 университетов`,
 
     "faq.question4": "Кто преподаватели и наставники?",
     "faq.answer4": "Вас будут обучать наставники с результатами 750+ по английскому и 800 по математике в SAT, победители международных олимпиад и студенты ведущих мировых вузов. Они делятся не только теорией, но и стратегиями, которые привели их к успеху.",
@@ -619,7 +633,14 @@ export const translations = {
     "faq.question2": "Maqsadly boshqa SAT kurslaridan nimasi bilan farq qiladi?",
     "faq.answer2": "Maqsadly — bu oddiy tayyorgarlik markazi emas. Biz SAT bo'yicha tajribali ustozlar bilan birga Harvard, CMUQ, Duke, Amherst va boshqa top universitetlarga qabul qilingan talabalar ishtirokidagi admissions masterklasslarni taklif qilamiz. Har bir o'quvchiga individual yondashuvni kafolatlash uchun qabul soni cheklangan.",
     "faq.question3": "Admissions Masterklasslarda qanday mavzular qamrab olinadi?",
-    "faq.answer3": "Masterklasslar ariza topshirishning barcha bosqichlarini o'z ichiga oladi:\n ✅ Personal statement yozish\n ✅ Qo'shimcha esselar\n ✅ Universitetlar ro'yxatini tuzish\n ✅ Extracurricular strategiya\n ✅ Red flag'lardan saqlanish\n ✅ Top 20 universitet arizalari va ularning sharhlari",
+    "faq.answer3": `Masterklasslar ariza topshirishning barcha bosqichlarini o'z ichiga oladi:
+
+✅ Personal statement yozish
+✅ Qo'shimcha esselar
+✅ Universitetlar ro'yxatini tuzish
+✅ Extracurricular strategiya
+✅ Red flag'lardan saqlanish
+✅ Top 20 universitet arizalari va ularning sharhlari`,
     "faq.question4": "Ustozlar va mentorlar kimlar?",
     "faq.answer4": "Mentorlar — 750+ English va 800 Math ball to'plagan, xalqaro olimpiada g'oliblari va yetakchi universitetlarga qabul qilingan talabalar. Ular sizga nazariya emas, aynan o'zlari muvaffaqiyatga yetgan real strategiyalarni o'rgatadi.",
     "faq.question5": "Kurs qancha davom etadi va darslar jadvali qanday?",
