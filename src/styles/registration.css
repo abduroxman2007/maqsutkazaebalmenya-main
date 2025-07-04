@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 /* Scope all styles to registration component only */
 .registration-page {
-    font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
     display: flex;
     justify-content: center;
@@ -276,7 +273,6 @@
     border-radius: 10px;
     background: #fff;
     color: #22223b;
-    font-family: 'Poppins', sans-serif;
     margin-bottom: 12px;
     transition: border-color 0.2s, box-shadow 0.2s;
     outline: none;

@@ -96,7 +96,7 @@ export const translations = {
    "teacher3-achievement1-sub": "Computer Science",
    "teacher3-achievement2-main": "800",
    "teacher3-achievement2-sub": "Perfect Math Score on the SAT",
-   "teacher3-achievement3-main": "Flex ‘24",
+   "teacher3-achievement3-main": "Flex '23",
    "teacher3-achievement3-sub": "Exchange Student",
 
    //Admissions Masterclass (Eldor's Section) 
@@ -298,7 +298,7 @@ export const translations = {
     "teacher3-achievement1-sub": "Компьютерные науки",
     "teacher3-achievement2-main": "800",
     "teacher3-achievement2-sub": "Идеальный результат по математике SAT",
-    "teacher3-achievement3-main": "Flex '24",
+    "teacher3-achievement3-main": "Flex '23",
     "teacher3-achievement3-sub": "Программа студенческого обмена",
 
     // Admissions Masterclass (Eldor's Section)
@@ -516,7 +516,7 @@ export const translations = {
     "teacher3-achievement1-sub": "Kompyuter fanlari",
     "teacher3-achievement2-main": "800",
     "teacher3-achievement2-sub": "SAT Math'da mukammal natija",
-    "teacher3-achievement3-main": "Flex '24",
+    "teacher3-achievement3-main": "Flex '23",
     "teacher3-achievement3-sub": "Almashinuv dasturi ishtirokchisi",
 
     // Admissions Masterclass

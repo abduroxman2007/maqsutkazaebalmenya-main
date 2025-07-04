@@ -1,7 +1,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@700&family=Inter:wght@400;600&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+@font-face {
+  font-family: 'AeonikPro';
+  src: url('./assets/fonts/AeonikProTRIAL-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
+  --main-font: 'AeonikPro', sans-serif;
   /* Primary Brand Colors (from logo mountain gradient) */
   /* --primary-gradient-start: #4A90E2;*/
   --primary-gradient-start: #38b6ff; /* Using as an accent color */
@@ -57,22 +65,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: inherit !important;
+  font-family: var(--main-font) !important;
   font-weight: inherit !important;
 }
 
 html, body, * {
-  font-family: 'Nunito', Arial, sans-serif !important;
+  font-family: var(--main-font) !important;
 }
 
 body, * {
-  font-family: 'Inter', Arial, Helvetica, sans-serif !important;
+  font-family: var(--main-font) !important;
   font-weight: 400 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .cta-button {
-  font-family: 'Sora', Arial, Helvetica, sans-serif !important;
-  font-weight: 700 !important;
+  font-family: var(--main-font) !important;
+  font-weight: 400 !important;
   letter-spacing: -0.01em;
   animation: fadeInUp 0.8s cubic-bezier(.4,2,.6,1);
 }
@@ -93,5 +101,58 @@ html, body {
     margin: 0 auto !important;
     box-sizing: border-box;
   }
+}
+
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.sansation-regular {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.sansation-light-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.sansation-regular-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.sansation-bold-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.aeonikpro-bold {
+  font-family: 'AeonikPro', sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
