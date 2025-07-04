@@ -9,6 +9,7 @@ const BrochureModal: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [name, setName] = useState<string>('');
   const [phone, setPhone] = useState<string>('');
+  const [showSuccess, setShowSuccess] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
@@ -47,10 +48,13 @@ const BrochureModal: React.FC = () => {
     e.preventDefault();
     if (name.trim() && phone.trim()) {
       await submitToGoogleForms({ fullName: name, phone });
-      alert(t('contact-success') || 'Thank you for your interest! We will contact you soon.');
+      setShowSuccess(true);
       setName('');
       setPhone('');
-      setOpen(false);
+      setTimeout(() => {
+        setShowSuccess(false);
+        setOpen(false);
+      }, 2000);
     } else {
       alert(t('contact-error') || 'Please fill in all fields.');
     }
@@ -82,6 +86,17 @@ const BrochureModal: React.FC = () => {
         <div className="brochure-modal-subtitle">
           Request call!
         </div>
+        {showSuccess ? (
+          <div className="contact-success-checkmark" style={{marginTop: '2rem', textAlign: 'center'}}>
+            <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style={{width: '60px', height: '60px', display: 'block', margin: '0 auto'}}>
+              <circle className="check-circle" cx="26" cy="26" r="23" fill="none"/>
+              <path className="check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+            <div style={{fontWeight: 700, color: '#38b6ff', fontSize: '1.2rem', marginTop: '0.5rem'}}>
+              {t('contact-success') || 'Thank you for your interest! We will contact you soon.'}
+            </div>
+          </div>
+        ) : (
         <form className="brochure-modal-form" autoComplete="off" onSubmit={handleSubmit}>
           <label className="brochure-modal-label" htmlFor="name">
             Your Name *
@@ -122,6 +137,7 @@ const BrochureModal: React.FC = () => {
             Submit
           </button>
         </form>
+        )}
       </div>
     </div>
   );

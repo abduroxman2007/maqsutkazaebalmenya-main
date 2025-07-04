@@ -4,11 +4,13 @@ import AboutFeatureIcon from './AboutFeatureIcon';
 import { animateOnScroll } from '../animations';
 import '../styles/about.css'
 import { submitToGoogleForms } from '../lib/googleForms';
+import SuccessOverlay from './SuccessOverlay';
 
 const AboutSection: React.FC = () => {
   const { t } = useTranslation();
   const [name, setName] = React.useState('');
   const [phone, setPhone] = React.useState('');
+  const [showSuccess, setShowSuccess] = React.useState(false);
 
   React.useEffect(() => { animateOnScroll(); }, []);
 
@@ -16,9 +18,10 @@ const AboutSection: React.FC = () => {
     e.preventDefault();
     if (name.trim() && phone.trim()) {
       await submitToGoogleForms({ fullName: name, phone });
-      alert(t('contact-success') || 'Thank you for your interest! We will contact you soon.');
+      setShowSuccess(true);
       setName('');
       setPhone('');
+      setTimeout(() => setShowSuccess(false), 2500);
     } else {
       alert(t('contact-error') || 'Please fill in all fields.');
     }
@@ -64,6 +67,9 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
       </div>
+      {showSuccess && (
+        <SuccessOverlay message={t('contact-success') || 'Thank you for your interest! We will contact you soon.'} />
+      )}
     </section>
   );
 };

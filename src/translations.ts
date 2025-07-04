@@ -187,7 +187,7 @@ export const translations = {
    "faq.answer6": "Enrollment is limited to ensure quality. To apply, visit our official website:\n 🌐 www.maqsadlyedu.uz\nOnce accepted, you'll receive full access to class schedules, resources, and onboarding materials.",
       // Contact Section
     "contact-title": "Get In Touch",
-    email: "Email:",
+    email: "Telegram:",
     phone: "Phone:",
     "send-message": "Send Message",
      // Footer
@@ -200,6 +200,9 @@ export const translations = {
      "footer-about": "About Us",
      "footer-teachers-link": "Our Teachers",
      "footer-success": "Success Stories",
+     "footer-copyright": "Copyright © 2025 Maqsadly. All Rights Reserved.",
+     "footer-copyright-left": "Copyright © 2025 Maqsadly. All Rights Reserved.",
+     "footer-copyright-right": "Public Offer",
 
     // "footer-blog": "Blog",
     // "footer-contact-info": "Contact Info",
@@ -390,10 +393,10 @@ export const translations = {
     "choose-plan": "Выбрать тариф",
 
     // Contact Section
-    "contact-title": "Get In Touch",
-    email: "Email:",
-    phone: "Phone:",
-    "send-message": "Send Message",
+    "contact-title": "Связаться с нами",
+    "email": "Телеграм:",
+    "phone": "Телефон:",
+    "send-message": "Отправить сообщение",
     // FAQ Section
     "faq.title": "Часто задаваемые вопросы",
 
@@ -425,6 +428,9 @@ export const translations = {
     "footer-about": "О нас",
     "footer-teachers-link": "Наши наставники",
     "footer-success": "Истории успеха",
+    "footer-copyright": "Copyright © 2025 Maqsadly. Все права защищены.",
+    "footer-copyright-left": "Copyright © 2025 Maqsadly. Все права защищены.",
+    "footer-copyright-right": "Публичная оферта",
 
     
     },
@@ -602,6 +608,8 @@ export const translations = {
     "ultimate-feature8": "✓ Top 20 universitet talabalaridan maslahat va “insider” strategiyalar",
     "choose-plan": "Tarifni tanlang",
 
+
+
     // FAQ Section
     "faq.title": "Ko'p so'raladigan savollar",
     "faq.question1": "Bu dastur kimlar uchun mo'ljallangan?",
@@ -617,6 +625,10 @@ export const translations = {
     "faq.question6": "Dasturga qanday qo'shilaman?",
     "faq.answer6": "Joylar soni cheklangan. Ariza topshirish uchun rasmiy saytimizga tashrif buyuring:\n 🌐 www.maqsadlyedu.uz\nQabul qilinganingizdan so'ng sizga dars jadvali, o'quv materiallari va platformaga kirish havolasi taqdim etiladi.",
 
+    "contact-title": "Bog‘lanish",
+    "email": "Telegram:",
+    "phone": "Telefon:",
+    "send-message": "Xabar yuborish",
     // Footer
     "footer-courses": "Kurslar",
     "footer-sat-english": "SAT English",
@@ -626,7 +638,10 @@ export const translations = {
     "footer-company": "Kompaniya",
     "footer-about": "Biz haqimizda",
     "footer-teachers-link": "Ustozlarimiz",
-    "footer-success": "Muvaffaqiyat hikoyalari"
+    "footer-success": "Muvaffaqiyat hikoyalari",
+    "footer-copyright": "Copyright © 2025 Maqsadly. Barcha huquqlar himoyalangan.",
+    "footer-copyright-left": "Copyright © 2025 Maqsadly. Barcha huquqlar himoyalangan.",
+    "footer-copyright-right": "Ommaviy oferta"
 
     },
 };
