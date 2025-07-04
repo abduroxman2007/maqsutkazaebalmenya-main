@@ -64,7 +64,7 @@ export const translations = {
     "start-journey": "Start Your Journey",
     
    // Teachers Section
-   "teachers-title": "Guest Speakers",
+   "teachers-title": "SAT Mentors",
    // Olimjon Teacher 1
    
    "teacher1-name": "Olimjon Uvayzov",
@@ -263,7 +263,7 @@ export const translations = {
 
 
     // Teachers Section
-    "teachers-title": "Cпикеры",
+    "teachers-title": "SAT Менторы",
     
     // Olimjon Teacher 1
     "teacher1-name": "Олимжон Увайзов",
@@ -389,6 +389,11 @@ export const translations = {
     "ultimate-feature8": "✓ Стратегия подачи заявлений и советы от студентов из топ-20 вузов",
     "choose-plan": "Выбрать тариф",
 
+    // Contact Section
+    "contact-title": "Get In Touch",
+    email: "Email:",
+    phone: "Phone:",
+    "send-message": "Send Message",
     // FAQ Section
     "faq.title": "Часто задаваемые вопросы",
 
@@ -473,7 +478,7 @@ export const translations = {
     "start-journey": "Safaringizni boshlang",
 
     // Teachers Section
-    "teachers-title": "Spikerlar",
+    "teachers-title": "SAT Mentorlar",
 
     // Olimjon Teacher 1
     "teacher1-name": "Olimjon Uvayzov",

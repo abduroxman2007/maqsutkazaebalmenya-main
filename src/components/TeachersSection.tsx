@@ -137,7 +137,7 @@ const TeachersSection: React.FC = () => {
             </div>
           </div>
           <div data-animate="center">
-            <h2>{t('teachers-title')}</h2>
+            <h2>{t('teachers-title3')}</h2>
           </div>
           {/* Swiper for teachers 4+ */}
           <div className="teacherimg-swiper-section">
