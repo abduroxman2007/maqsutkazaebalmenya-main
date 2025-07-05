@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 import Registration from './components/Registration';
 import { TranslationProvider } from './TranslationContext';
 import { useAnimateOnScroll } from './useAnimateOnScroll';
-import BrochureModal from './components/BrochureModal';
+import BrochureModal from './components/brochureModal';
 
 function MainPage() {
   useAnimateOnScroll();

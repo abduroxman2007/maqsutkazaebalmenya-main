@@ -221,6 +221,11 @@ export const translations = {
     // support: "Support",
     // sitemap: "Sitemap",
 
+    "modal-invite-title": "Your Next Chapter Starts Here",
+    "modal-invite-subtitle": "Discover new opportunities. Meet inspiring people and take your next big step.",
+    "modal-invite-btn": "Claim My Invitation →",
+    "modal-invite-note": "✨ Don't miss out—secure your spot today!",
+
   },
   ru: {// Navigation
    
@@ -447,6 +452,11 @@ export const translations = {
     "footer-copyright-left": "Copyright © 2025 Maqsadly. Все права защищены.",
     "footer-copyright-right": "Публичная оферта",
 
+    "modal-invite-title": "Твоя новая глава начинается здесь",
+    "modal-invite-subtitle": "Открой новые возможности. Вдохновляйся и двигайся вперёд.",
+    "modal-invite-btn": "Получить приглашение →",
+    "modal-invite-note": "✨ Не упусти шанс — забронируй место!",
+
     
     },
 
@@ -664,7 +674,12 @@ export const translations = {
     "footer-success": "Muvaffaqiyat hikoyalari",
     "footer-copyright": "Copyright © 2025 Maqsadly. Barcha huquqlar himoyalangan.",
     "footer-copyright-left": "Copyright © 2025 Maqsadly. Barcha huquqlar himoyalangan.",
-    "footer-copyright-right": "Ommaviy oferta"
+    "footer-copyright-right": "Ommaviy oferta",
+
+    "modal-invite-title": "Yangi bosqich — hoziroq boshlanadi",
+    "modal-invite-subtitle": "Yangi imkoniyatlarni kashf eting. Ilhomlaning va oldinga qadam tashlang.",
+    "modal-invite-btn": "Taklifnomani olish →",
+    "modal-invite-note": "✨ Imkoniyatni boy bermang — joyingizni hoziroq band qiling!"
 
     },
 };
